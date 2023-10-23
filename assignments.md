@@ -1,14 +1,38 @@
 ### Tests - 50%
 - Lab Test 1 25%
 - Lab Test 2 25%
+- Assignment 1 25%
+- Assignment 2 25%
 
+Form a team of 4 people and develop a piece of generative art using Processing & Python inspired by the any of the following ideas:
+
+- YM2413 Sound Chip
+- The Number 52: "I love the number 52. I had an intern when I worked at MicroCabin. He always did an impression of his uncle who ran lotteries. He always called the number 52; that's why I came to like it. Patrol cars driving around the city often have a  number. I fantasized about such cars; about a car with the number 52, which was the fastest of all cars
+- Wave Injection: "The title of "Wave Injection" that I am presenting this time was born from my desire to continue to be a "Wave" (sound and wave) emitting device. Everyone! Enjoy forever! Create forever!"
+- MSXGOTO40
+- The Story of DANI. The AI Chatbot from 1987 that arrives in 2023
+
+The piece can last up to 1 minute. You can use any combination of: 
+
+- HSB Colour space, procedurally generating colours
+- Laying elements with alpha
+- Drawing using line, circle, ellipse etc
+- 3D Shapes
+- 8 Bit style graphics
+- Movement
+- Spinning logos
+- Making classes for visual elements
+
+A selection of the projects will be displayed during Nito San, composer of music for the MSX at MSXGOTO40, Zonnehuis Amsterdam on Dec 9, 2023. In order to be eligible you must complete your project by 1 December 2023. This assignment is worth 25% of your overall grade.
+
+You can work on the project during lab time on Mondays and expected to do work outside of class. Make a github repository for your project, so you can collaborate. Each team member should make commits on the repository as evidence of work. 
 
 ## Grading:
 
 You will be graded based on the following criteria:
 
-- Creativity, originality and novelty in the visual elements and overall design: 35%
-- Technical proficiency in using Processing, Minim, or the Processing Sound library to analyze the audio and generate responsive visuals: 35%
+- Creativity, originality and novelty in the visual elements and overall visual design: 35%
+- Technical proficiency in using Processing & Python 35%
 - Collaboration and teamwork in dividing tasks and managing the project using Github: 15%
 - Quality and professionalism of the final program and video presentation: 15%
 
@@ -18,8 +42,8 @@ Check out [playlists of previous assignments](https://www.youtube.com/@skooter50
 
 | Grade | Description |
 | ------|-------------|
-| First | The assignment is technically complex with lots of elements responding to or synchronised to sound. Lots of interactivity and things to see and do in the assignment. You have done lots of self directed learning and included advanced coding techniques that you have taught yourself. The assignment uses input devices to control your assignment such as the Kinect, Leap motion, microphone, webcam, a game controller or a custom controller. The visual is synchronised to the music perfectly. You will have used PVectors, transforms and classes to create autonomous elements in the assignment. Your code is organised into classes that use inheritance and polymorphism. The colours you have chosen are harmonious and beautiful. The assignment is well documented with detailed instructions and a youtube video. You made or programmed all the art assets to a high standard. You worked on the assignment making steady progress and have documented this. Your creation is an enjoyable experience that really suits the music you are using. |
-| 2.1 | The assignment is fairly complex with some elements responding to sound in a straight-forward way such as colours changing or shapes changing size. There is a little interactivity. You have added a few features that you have had to learn some programming stuff for. You made or programmed all the art assets but maybe got some stuff online too. Your colours are good but could use some improvement to make them more beautiful. You have used classes, but maybe not inheritance & polymorphism.  |
+| First | Looks beautiful, colours work really well together. All the visual elements combine.. Close adherence to the theme and excellent use of storytelling to convey the theme. Deep knowledge of source material. Visually complex with many interacting elements. Technically complex with use of classes, vectors and transforms. Great teamwork. All team members making documented commits. Self directed learning. Great documentation and video demo. |
+| 2.1 | The assignment is fairly complex with some elements interacting in a straight-forward way such as colours changing or shapes changing size. There is a little movement. You have added a few features that you have had to learn some programming stuff for. You made or programmed all the art assets but maybe got some stuff online too. Your colours are good but could use some improvement to make them more beautiful. You have used classes, but maybe not inheritance & polymorphism.  |
 | 2.2 | The assignment isn't complex and is mostly based on modifying the examples we developed in the class. Your documentation is minimal and little evidence of good project management. Development on the project was rushed and you left everything until the week before the submission deadline. There are are incomplete features or things you planned to get working and couldn't. No youtube video or minimal documentation. |
 | Pass | Something very basic that is just a small modification of the code we developed in the class. Missing documentation. Completed in the days before the submission deadline and minimal or missing documentation. |
 | Fail | Project won't compile or major issues. |
