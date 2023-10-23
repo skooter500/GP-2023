@@ -4,13 +4,16 @@
 - Assignment 1 25%
 - Assignment 2 25%
 
-Form a team of 4 people and develop a piece of generative art using Processing & Python inspired by the any of the following ideas:
+![image](images/FB-2048x1075.jpg)
+
+
+Form a team of max 5 people and develop a piece of generative art using Processing & Python inspired by the any of the following ideas:
 
 - YM2413 Sound Chip
 - The Number 52: "I love the number 52. I had an intern when I worked at MicroCabin. He always did an impression of his uncle who ran lotteries. He always called the number 52; that's why I came to like it. Patrol cars driving around the city often have a  number. I fantasized about such cars; about a car with the number 52, which was the fastest of all cars
 - Wave Injection: "The title of "Wave Injection" that I am presenting this time was born from my desire to continue to be a "Wave" (sound and wave) emitting device. Everyone! Enjoy forever! Create forever!"
 - MSXGOTO40
-- The Story of DANI. The AI Chatbot from 1987 that arrives in 2023
+- The Story of DANI. The AI Chatbot from 1987 that arrives in 2023. See http://bryanduggan.org
 
 The piece can last up to 1 minute. You can use any combination of: 
 
@@ -23,7 +26,7 @@ The piece can last up to 1 minute. You can use any combination of:
 - Spinning logos
 - Making classes for visual elements
 
-A selection of the projects will be displayed during Nito San, composer of music for the MSX at MSXGOTO40, Zonnehuis Amsterdam on Dec 9, 2023. In order to be eligible you must complete your project by 1 December 2023. This assignment is worth 25% of your overall grade.
+A selection of the projects will be displayed during Nito San's music performance on the msx MSX at MSXGOTO40, Amsterdam on Dec 9, 2023. In order to be eligible you must complete your project by 1 December 2023. This assignment is worth 25% of your overall grade.
 
 You can work on the project during lab time on Mondays and expected to do work outside of class. Make a github repository for your project, so you can collaborate. Each team member should make commits on the repository as evidence of work. 
 
