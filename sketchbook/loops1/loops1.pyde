@@ -1,4 +1,5 @@
 def setup():
+    # fullScreen()
     size(500, 500)
     colorMode(HSB)
     
@@ -13,8 +14,11 @@ def setup():
         
     for i in range(20, 0, -1):
         print(i)
-            
+       
+coff = 0
+                                  
 def draw():
+    global coff
     background(0)
     stroke(255)
     
@@ -58,13 +62,45 @@ def draw():
     start_c = mouseX / 2
     for i in range(num_circles):
         x = rad + (gap * i)
-        c = (start_c + (i * cgap)) % 256
+        c = (start_c + coff + (i * cgap)) % 256
         fill(70, c, 255)
         circle(x, height / 2, gap)
         
+    num_circles = 10    
+    coff += 1
+    gap = width / float(num_circles)
+    rad = gap / 2
+    cgap = mouseY / 2
+    start_c = mouseX / 2
+    for i in range(num_circles):
+        x = rad + (gap * i)
+        c = (start_c + coff + (i * cgap)) % 256
+        fill(c, 255, 255)
+        w = width - (i * gap)
+        circle(width / 2, height / 2, w)
+        
+    num_circles = 6
+    angle = TWO_PI / num_circles
+    cx = width / 2
+    cy = height / 2
+    for j in range(10):
+        for i in range(num_circles):
+            theta = i * angle
+            c = (start_c + coff + (i * cgap)) % 256
+            fill(c, c, 255)
+            x = sin(theta) * ((width / 4) * j)
+            y = cos(theta) * ((height / 4) * j)
+            ellipse(cx + x, cy + y, sin(theta+ c) * 50, cos(theta + c) * 50)
+        
     
-    
-
+    num_circles = 10
+    w = width / num_circles
+    r = w / 2
+    for row in range(num_circles):
+        for col in range(num_circles):
+            x = map(col, 0, num_circles, r, width + r)
+            y = map(row, 0, num_circles, r, width + r)
+            circle(x, y, w)
 
     
     
