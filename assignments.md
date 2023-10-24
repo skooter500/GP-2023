@@ -1,8 +1,10 @@
-### Tests - 50%
+# Grading
 - Lab Test 1 25%
 - Lab Test 2 25%
 - Assignment 1 25%
 - Assignment 2 25%
+
+# Assignment 1
 
 Form a team of 4 people and develop a piece of generative art using Processing & Python inspired by the any of the following ideas:
 
@@ -42,8 +44,8 @@ Check out [playlists of previous assignments](https://www.youtube.com/@skooter50
 
 | Grade | Description |
 | ------|-------------|
-| First | Looks beautiful, colours work really well together. All the visual elements combine.. Close adherence to the theme and excellent use of storytelling to convey the theme. Deep knowledge of source material. Visually complex with many interacting elements. Technically complex with use of classes, vectors and transforms. Great teamwork. All team members making documented commits. Self directed learning. Great documentation and video demo. |
-| 2.1 | The assignment is fairly complex with some elements interacting in a straight-forward way such as colours changing or shapes changing size. There is a little movement. You have added a few features that you have had to learn some programming stuff for. You made or programmed all the art assets but maybe got some stuff online too. Your colours are good but could use some improvement to make them more beautiful. You have used classes, but maybe not inheritance & polymorphism.  |
-| 2.2 | The assignment isn't complex and is mostly based on modifying the examples we developed in the class. Your documentation is minimal and little evidence of good project management. Development on the project was rushed and you left everything until the week before the submission deadline. There are are incomplete features or things you planned to get working and couldn't. No youtube video or minimal documentation. |
+| First | Looks beautiful, colours work really well together. All the visual elements combine. Close adherence to the theme and excellent use of storytelling to convey the theme. Deep knowledge of source material. Visually complex with many interacting elements. Technically complex with use of classes, vectors and transforms. Great teamwork. All team members making documented commits. Self directed learning. Great documentation and video demo. Team met regularly. |
+| 2.1 | The assignment is fairly complex with some elements interacting in a straight-forward way such as colours changing or shapes changing size. There is a little movement. You have added a few features that you have had to learn some programming stuff for. You made or programmed all the art assets but maybe got some stuff online too. Your colours are good but could use some improvement to make them more beautiful. You have used one or two classes.  Team met a few times |
+| 2.2 | The assignment isn't complex and is mostly based on modifying the examples we developed in the class. Your documentation is minimal and little evidence of good project management. Development on the project was rushed and you left everything until the week before the submission deadline. There are are incomplete features or things you planned to get working and couldn't. No youtube video or minimal documentation. No use of classes or advanced features. Team didn't meet often or work well together. |
 | Pass | Something very basic that is just a small modification of the code we developed in the class. Missing documentation. Completed in the days before the submission deadline and minimal or missing documentation. |
 | Fail | Project won't compile or major issues. |
