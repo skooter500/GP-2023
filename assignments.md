@@ -4,6 +4,8 @@
 - Assignment 1 25%
 - Assignment 2 25%
 
+# Assignment 1
+
 ![image](images/FB-2048x1075.jpg)
 
 
