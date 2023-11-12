@@ -1,8 +1,4 @@
-### Tests - 50%
-- Lab Test 1 25%
-- Lab Test 2 25%
-- Assignment 1 25%
-- Assignment 2 25%
+# Assignment 1
 
 ![image](images/FB-2048x1075.jpg)
 
@@ -50,3 +46,10 @@ Check out [playlists of previous assignments](https://www.youtube.com/@skooter50
 | 2.2 | The assignment isn't complex and is mostly based on modifying the examples we developed in the class. Your documentation is minimal and little evidence of good project management. Development on the project was rushed and you left everything until the week before the submission deadline. There are are incomplete features or things you planned to get working and couldn't. No youtube video or minimal documentation. |
 | Pass | Something very basic that is just a small modification of the code we developed in the class. Missing documentation. Completed in the days before the submission deadline and minimal or missing documentation. |
 | Fail | Project won't compile or major issues. |
+
+
+# Grading
+- Lab Test 1 25%
+- Lab Test 2 25%
+- Assignment 1 25%
+- Assignment 2 25%
