@@ -2,12 +2,12 @@ models = []
 
 def setup():
     global models
-    # fullScreen(P3D)
-    size(1000, 1000, P3D)
+    fullScreen(P3D)
+    # size(500, 500, P3D)
     colorMode(HSB)
     
-    for i in range(1000):    
-        msx_model = Model("msx.obj", random(-250, 250), random(-250, 250), random(0, 300), random(10, 20), random(256))
+    for i in range(50): # Make 50 models
+        msx_model = Model("msx.obj", random(-250, 250), random(-250, 250), random(0, 1000), random(10, 20), random(256))
         models.append(msx_model)
                
 def draw():
@@ -65,11 +65,11 @@ class Model:
     def render(self):
         pushMatrix()
         translate(self.pos.x, self.pos.y, self.pos.z)
-        rotateY(self.theta)
+        # rotateY(self.theta)
         rotateX(-HALF_PI)
         
         scale(1.0 + noise(self.theta * 2) * 100)        
-        stroke((self.h + mouseX) % 256, 255, 255, 50)
+        stroke((self.h + mouseX) % 256, 255, 255, 10)
         noFill()
         shape(self.sh)
         popMatrix()
