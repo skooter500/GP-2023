@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://bcumpm0udhbff"]
+
+[ext_resource type="Script" path="res://root1.gd" id="1_fykjs"]
+[ext_resource type="Script" path="res://player2.gd" id="3_j8y1e"]
+[ext_resource type="PackedScene" uid="uid://dcn4soippejj5" path="res://bullet.tscn" id="4_luoey"]
+[ext_resource type="PackedScene" uid="uid://bwi6lmhwtpkeh" path="res://block.tscn" id="5_cr6ka"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_m7bvt"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_7xkkn"]
+
+[node name="root" type="Node2D"]
+script = ExtResource("1_fykjs")
+
+[node name="player" type="RigidBody2D" parent="." node_paths=PackedStringArray("bullet_spawn")]
+position = Vector2(-210, 70)
+linear_damp = 1.0
+angular_damp = 1.0
+script = ExtResource("3_j8y1e")
+power = 500.0
+rot_power = 500.0
+bullet = ExtResource("4_luoey")
+bullet_spawn = NodePath("shoot_point")
+
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+modulate = Color(1, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_m7bvt")
+scale = Vector2(50, 50)
+texture = SubResource("CanvasTexture_7xkkn")
+
+[node name="Sprite2D2" type="Sprite2D" parent="player/Sprite2D"]
+modulate = Color(1, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_m7bvt")
+position = Vector2(0, -0.565)
+scale = Vector2(0.2, 2)
+texture = SubResource("CanvasTexture_7xkkn")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="player"]
+polygon = PackedVector2Array(-24, -25, -5, -25, -5, -79, 4, -79, 4, -24, 24, -24, 24, 24, -26, 25)
+
+[node name="shoot_point" type="Node2D" parent="player"]
+position = Vector2(0, -87)
+
+[node name="Timer" type="Timer" parent="player"]
+wait_time = 0.1
+one_shot = true
+
+[node name="block" parent="." instance=ExtResource("5_cr6ka")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="block2" parent="." instance=ExtResource("5_cr6ka")]
+position = Vector2(157, -160)

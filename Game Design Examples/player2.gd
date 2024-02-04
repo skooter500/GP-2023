@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 @export var power:float = 0
-@export var rot_speed:float = 360
+@export var rot_power:float = 360
 
 @export var bullet:PackedScene
 @export var bullet_spawn:Node2D
@@ -15,14 +15,17 @@ func _ready():
 	pass
 	
 func _physics_process(delta):
+	
+	var r = Input.get_axis("left", "right")
+	apply_torque(rot_power * r)
+	
 	var f = Input.get_axis("back", "forward")
 	
 	var force = power * -transform.y * f
-	debugDra
-	apply_central_force(force)
-	var r = Input.get_axis("left", "right")
-	rotate(deg_to_rad(rot_speed) * delta * r)
-	
+	DebugDraw2D.set_text("Force", force)
+	if (force.length() > 0):
+		apply_central_force(force)
+		pass
 	# print("right: " + str(transform.x))
 	# print("up:" + str(transform.y))
 	
