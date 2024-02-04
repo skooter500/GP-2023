@@ -1,16 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://dcn4soippejj5"]
+[gd_scene load_steps=6 format=3 uid="uid://dcn4soippejj5"]
 
 [ext_resource type="Script" path="res://bullet.gd" id="1_csdhu"]
+[ext_resource type="PackedScene" uid="uid://nb8daasaeu3i" path="res://explosion.tscn" id="2_hvpqa"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ouehp"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_mkyav"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_em84v"]
+size = Vector2(25, 20)
 
 [node name="bullet" type="CharacterBody2D"]
 script = ExtResource("1_csdhu")
-speed = 100
+speed = 500
+explosion = ExtResource("2_hvpqa")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0, 0, 1)
@@ -19,5 +22,5 @@ scale = Vector2(5, 5)
 texture = SubResource("CanvasTexture_mkyav")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.3, 0.3)
 shape = SubResource("RectangleShape2D_em84v")
