@@ -18,6 +18,7 @@ func _physics_process(delta):
 	var f = Input.get_axis("back", "forward")
 	
 	var force = power * -transform.y * f
+	debugDra
 	apply_central_force(force)
 	var r = Input.get_axis("left", "right")
 	rotate(deg_to_rad(rot_speed) * delta * r)
