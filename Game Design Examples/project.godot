@@ -15,6 +15,11 @@ run/main_scene="res://root2.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=2000
+window/size/viewport_height=2000
+
 [input]
 
 forward={

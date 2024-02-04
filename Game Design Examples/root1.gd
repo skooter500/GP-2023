@@ -1,5 +1,6 @@
 extends Node2D
 
+
 func _input(event):
 	if event is InputEventKey:
 		var key_event = event as InputEventKey
