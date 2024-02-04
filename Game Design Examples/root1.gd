@@ -1,7 +1,11 @@
 extends Node2D
 
+@export var custom_font : Font
 
-
+func _ready():
+	DebugDraw2D.config.text_custom_font = custom_font	
+	DebugDraw2D.config.text_default_size = 64
+	
 func _input(event):
 	if event is InputEventKey:
 		var key_event = event as InputEventKey

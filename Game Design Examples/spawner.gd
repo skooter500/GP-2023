@@ -3,8 +3,7 @@ extends Node2D
 @export var thing:PackedScene
 
 func _input(event):	
-	if event is InputEventMouseButton:	
-		print(event)
+	if event is InputEventMouseButton and event.pressed:	
 		var new_thing = thing.instantiate()
 		new_thing.global_position = event.global_position
 		new_thing.name = "block " + str(event)

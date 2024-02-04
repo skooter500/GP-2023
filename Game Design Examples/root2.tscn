@@ -1,10 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://bcumpm0udhbff"]
+[gd_scene load_steps=10 format=3 uid="uid://bcumpm0udhbff"]
 
 [ext_resource type="Script" path="res://root1.gd" id="1_fykjs"]
 [ext_resource type="Script" path="res://player2.gd" id="3_j8y1e"]
 [ext_resource type="PackedScene" uid="uid://dcn4soippejj5" path="res://bullet.tscn" id="4_luoey"]
 [ext_resource type="PackedScene" uid="uid://bwi6lmhwtpkeh" path="res://block.tscn" id="5_cr6ka"]
 [ext_resource type="Script" path="res://spawner.gd" id="5_qpayn"]
+[ext_resource type="FontFile" uid="uid://c7m2s77s7pxfy" path="res://fonts/Minecraft.ttf" id="6_ia3vf"]
+
+[sub_resource type="SystemFont" id="SystemFont_o1nqs"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_m7bvt"]
 
@@ -12,6 +15,7 @@
 
 [node name="root" type="Node2D"]
 script = ExtResource("1_fykjs")
+custom_font = SubResource("SystemFont_o1nqs")
 
 [node name="player" type="RigidBody2D" parent="." node_paths=PackedStringArray("bullet_spawn")]
 position = Vector2(222, 449)
@@ -20,8 +24,8 @@ linear_damp_mode = 1
 linear_damp = 2.0
 angular_damp = 2.0
 script = ExtResource("3_j8y1e")
-power = 2000.0
-rot_power = 10000.0
+power = 4000.0
+rot_power = 40000.0
 bullet = ExtResource("4_luoey")
 bullet_spawn = NodePath("shoot_point")
 
@@ -45,14 +49,20 @@ polygon = PackedVector2Array(-24, -25, -5, -25, -5, -79, 4, -79, 4, -24, 24, -24
 position = Vector2(0, -87)
 
 [node name="Timer" type="Timer" parent="player"]
-wait_time = 0.1
+wait_time = 0.2
 one_shot = true
-
-[node name="block" parent="." instance=ExtResource("5_cr6ka")]
-position = Vector2(475, 91)
 
 [node name="spawner" type="Node2D" parent="."]
 script = ExtResource("5_qpayn")
 thing = ExtResource("5_cr6ka")
+
+[node name="ui" type="Node" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ui"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_fonts/normal_font = ExtResource("6_ia3vf")
+text = "Hello wortld
+f"
 
 [connection signal="timeout" from="player/Timer" to="player" method="_on_timer_timeout"]
