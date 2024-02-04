@@ -11,7 +11,7 @@ func _ready():
 	modulate_color.g = 255
 	modulate_color.b = 255
 	modulate_color.a = 0 # A is alpha aka transparency
-	tween.tween_property(self, 'modulate', modulate_color, 2)
+	tween.tween_property(self, 'modulate', modulate_color, $Timer.wait_time)
 
 func _process(delta):
 	velocity = -transform.y * speed

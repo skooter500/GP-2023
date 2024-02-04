@@ -4,6 +4,7 @@ extends Node2D
 
 func _input(event):	
 	if event is InputEventMouseButton:	
+		print(event)
 		var new_thing = thing.instantiate()
 		new_thing.global_position = event.global_position
 		new_thing.name = "block " + str(event)
