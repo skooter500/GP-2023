@@ -49,7 +49,4 @@ one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="block2" parent="." instance=ExtResource("5_cr6ka")]
-position = Vector2(157, -160)
-
 [connection signal="timeout" from="player/Timer" to="player" method="_on_timer_timeout"]
