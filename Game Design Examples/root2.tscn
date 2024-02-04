@@ -15,10 +15,10 @@ script = ExtResource("1_fykjs")
 [node name="player" type="RigidBody2D" parent="." node_paths=PackedStringArray("bullet_spawn")]
 position = Vector2(-210, 70)
 linear_damp = 1.0
-angular_damp = 1.0
+angular_damp = 2.0
 script = ExtResource("3_j8y1e")
-power = 500.0
-rot_power = 500.0
+power = 1000.0
+rot_power = 10000.0
 bullet = ExtResource("4_luoey")
 bullet_spawn = NodePath("shoot_point")
 
@@ -51,3 +51,5 @@ one_shot = true
 
 [node name="block2" parent="." instance=ExtResource("5_cr6ka")]
 position = Vector2(157, -160)
+
+[connection signal="timeout" from="player/Timer" to="player" method="_on_timer_timeout"]

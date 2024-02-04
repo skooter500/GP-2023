@@ -84,5 +84,5 @@ texture = SubResource("CanvasTexture_fel05")
 [node name="block2" parent="." instance=ExtResource("2_4ct5u")]
 position = Vector2(157, -160)
 
-[connection signal="timeout" from="player2/Timer" to="player" method="_on_timer_timeout"]
+[connection signal="timeout" from="player2/Timer" to="player2" method="_on_timer_timeout"]
 [connection signal="timeout" from="player/Timer" to="player" method="_on_timer_timeout"]

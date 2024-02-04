@@ -18,9 +18,8 @@ explosion = ExtResource("2_hvpqa")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0, 0, 1)
 material = SubResource("CanvasItemMaterial_ouehp")
-scale = Vector2(5, 5)
+scale = Vector2(10, 10)
 texture = SubResource("CanvasTexture_mkyav")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(0.3, 0.3)
 shape = SubResource("RectangleShape2D_em84v")
