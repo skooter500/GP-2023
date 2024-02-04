@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dv8lkq0qn6isi"]
+[gd_scene load_steps=8 format=3 uid="uid://dv8lkq0qn6isi"]
 
 [ext_resource type="Script" path="res://player1.gd" id="1_1ktxe"]
 [ext_resource type="Script" path="res://root1.gd" id="1_r58pd"]
 [ext_resource type="PackedScene" uid="uid://bwi6lmhwtpkeh" path="res://block.tscn" id="2_4ct5u"]
 [ext_resource type="PackedScene" uid="uid://nb8daasaeu3i" path="res://explosion.tscn" id="3_s6fdq"]
+[ext_resource type="Script" path="res://player2.gd" id="5_0kova"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vi2o0"]
 
@@ -15,7 +16,24 @@ script = ExtResource("1_r58pd")
 [node name="explosion" parent="." instance=ExtResource("3_s6fdq")]
 visible = false
 
+[node name="player2" type="RigidBody2D" parent="."]
+script = ExtResource("5_0kova")
+
+[node name="Sprite2D" type="Sprite2D" parent="player2"]
+modulate = Color(1, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_vi2o0")
+scale = Vector2(50, 50)
+texture = SubResource("CanvasTexture_fel05")
+
+[node name="Sprite2D2" type="Sprite2D" parent="player2/Sprite2D"]
+modulate = Color(1, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_vi2o0")
+position = Vector2(0, -0.565)
+scale = Vector2(0.2, 2)
+texture = SubResource("CanvasTexture_fel05")
+
 [node name="player" type="CharacterBody2D" parent="."]
+visible = false
 position = Vector2(-226, 0)
 collision_mask = 3
 script = ExtResource("1_1ktxe")
@@ -31,27 +49,25 @@ polygon = PackedVector2Array(-24, -25, -5, -25, -5, -79, 4, -79, 4, -24, 24, -24
 wait_time = 0.1
 one_shot = true
 
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+modulate = Color(1, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_vi2o0")
+scale = Vector2(50, 50)
+texture = SubResource("CanvasTexture_fel05")
+script = ExtResource("5_0kova")
+
+[node name="Sprite2D2" type="Sprite2D" parent="player/Sprite2D"]
+modulate = Color(1, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_vi2o0")
+position = Vector2(0, -0.565)
+scale = Vector2(0.2, 2)
+texture = SubResource("CanvasTexture_fel05")
+
 [node name="block" parent="." instance=ExtResource("2_4ct5u")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="block2" parent="." instance=ExtResource("2_4ct5u")]
 position = Vector2(157, -160)
-
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
-modulate = Color(1, 0, 0, 1)
-material = SubResource("CanvasItemMaterial_vi2o0")
-position = Vector2(-226, 0)
-scale = Vector2(50, 50)
-texture = SubResource("CanvasTexture_fel05")
-
-[node name="Sprite2D2" type="Sprite2D" parent="RigidBody2D/Sprite2D"]
-modulate = Color(1, 0, 0, 1)
-material = SubResource("CanvasItemMaterial_vi2o0")
-position = Vector2(0, -0.565)
-scale = Vector2(0.2, 2)
-texture = SubResource("CanvasTexture_fel05")
 
 [connection signal="timeout" from="player/Timer" to="player" method="_on_timer_timeout"]
