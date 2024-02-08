@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bcumpm0udhbff"]
+[gd_scene load_steps=14 format=3 uid="uid://bcumpm0udhbff"]
 
 [ext_resource type="Script" path="res://root1.gd" id="1_fykjs"]
 [ext_resource type="Script" path="res://player2.gd" id="3_j8y1e"]
@@ -6,12 +6,21 @@
 [ext_resource type="PackedScene" uid="uid://bwi6lmhwtpkeh" path="res://block.tscn" id="5_cr6ka"]
 [ext_resource type="Script" path="res://spawner.gd" id="5_qpayn"]
 [ext_resource type="FontFile" uid="uid://c7m2s77s7pxfy" path="res://fonts/Minecraft.ttf" id="6_ia3vf"]
+[ext_resource type="Script" path="res://CoolMove.gd" id="7_mxf0x"]
 
 [sub_resource type="SystemFont" id="SystemFont_o1nqs"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_m7bvt"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_7xkkn"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ennfr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i4h5p"]
+size = Vector2(50, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_52b60"]
+size = Vector2(50, 50)
 
 [node name="root" type="Node2D"]
 script = ExtResource("1_fykjs")
@@ -64,5 +73,29 @@ offset_bottom = 40.0
 theme_override_fonts/normal_font = ExtResource("6_ia3vf")
 text = "Hello wortld
 f"
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(72, 87)
+script = ExtResource("7_mxf0x")
+speed = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+modulate = Color(1, 0, 0, 1)
+scale = Vector2(50, 50)
+texture = SubResource("CanvasTexture_ennfr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_i4h5p")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(72, 196)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+modulate = Color(1, 0, 0, 1)
+scale = Vector2(50, 50)
+texture = SubResource("CanvasTexture_ennfr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_52b60")
 
 [connection signal="timeout" from="player/Timer" to="player" method="_on_timer_timeout"]
