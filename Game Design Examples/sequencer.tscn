@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=3 uid="uid://bv1vlrmjcjsna"]
+
+[ext_resource type="Material" uid="uid://caap4ab5nopa3" path="res://pad_material.tres" id="1_nvuou"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_vxnig"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="pads" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="pads"]
+modulate = Color(0.941176, 0, 0.941176, 1)
+material = ExtResource("1_nvuou")
+position = Vector2(112, 112)
+scale = Vector2(100, 100)
+texture = SubResource("CanvasTexture_vxnig")
+
+[node name="Sprite2D2" type="Sprite2D" parent="pads"]
+modulate = Color(0.941176, 0, 0.941176, 1)
+material = ExtResource("1_nvuou")
+position = Vector2(248, 112)
+scale = Vector2(100, 100)
+texture = SubResource("CanvasTexture_vxnig")
+
+[node name="Sprite2D3" type="Sprite2D" parent="pads"]
+modulate = Color(0.941176, 0, 0.941176, 1)
+material = ExtResource("1_nvuou")
+position = Vector2(384, 112)
+scale = Vector2(100, 100)
+texture = SubResource("CanvasTexture_vxnig")
+
+[node name="Sprite2D4" type="Sprite2D" parent="pads"]
+modulate = Color(0.941176, 0, 0.941176, 1)
+material = ExtResource("1_nvuou")
+position = Vector2(512, 112)
+scale = Vector2(100, 100)
+texture = SubResource("CanvasTexture_vxnig")
+
+[node name="drums" type="Node2D" parent="."]
+position = Vector2(0, 296)
+
+[node name="Sprite2D" type="Sprite2D" parent="drums"]
+modulate = Color(0.941176, 0, 0.941176, 1)
+material = ExtResource("1_nvuou")
+position = Vector2(112, 112)
+scale = Vector2(100, 100)
+texture = SubResource("CanvasTexture_vxnig")
+
+[node name="Sprite2D2" type="Sprite2D" parent="drums"]
+modulate = Color(0.941176, 0, 0.941176, 1)
+material = ExtResource("1_nvuou")
+position = Vector2(248, 112)
+scale = Vector2(100, 100)
+texture = SubResource("CanvasTexture_vxnig")
+
+[node name="Sprite2D3" type="Sprite2D" parent="drums"]
+modulate = Color(0.941176, 0, 0.941176, 1)
+material = ExtResource("1_nvuou")
+position = Vector2(384, 112)
+scale = Vector2(100, 100)
+texture = SubResource("CanvasTexture_vxnig")
+
+[node name="Sprite2D4" type="Sprite2D" parent="drums"]
+modulate = Color(0.941176, 0, 0.941176, 1)
+material = ExtResource("1_nvuou")
+position = Vector2(512, 112)
+scale = Vector2(100, 100)
+texture = SubResource("CanvasTexture_vxnig")

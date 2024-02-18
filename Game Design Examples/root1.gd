@@ -4,7 +4,8 @@ extends Node2D
 
 func _ready():
 	DebugDraw2D.config.text_custom_font = custom_font	
-	DebugDraw2D.config.text_default_size = 64
+	DebugDraw2D.config.text_default_size = 24
+	pass
 	
 func _input(event):
 	if event is InputEventKey:

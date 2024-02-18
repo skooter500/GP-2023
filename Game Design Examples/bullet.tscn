@@ -12,11 +12,11 @@ size = Vector2(10, 10)
 
 [node name="bullet" type="CharacterBody2D"]
 script = ExtResource("1_csdhu")
-speed = 400
+speed = 500
 explosion = ExtResource("2_hvpqa")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(1, 0, 0, 1)
+modulate = Color(0.313726, 0.568627, 0.701961, 1)
 material = SubResource("CanvasItemMaterial_ouehp")
 scale = Vector2(10, 10)
 texture = SubResource("CanvasTexture_mkyav")
