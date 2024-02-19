@@ -51,6 +51,14 @@ position = Vector2(0, -87)
 wait_time = 0.2
 one_shot = true
 
+[node name="Camera2D" type="Camera2D" parent="player"]
+limit_left = 100
+limit_top = 100
+limit_right = 100
+limit_bottom = 100
+limit_smoothed = true
+position_smoothing_enabled = true
+
 [node name="spawner" type="Node2D" parent="."]
 script = ExtResource("5_k3k0x")
 thing = ExtResource("6_0o2v3")

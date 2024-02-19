@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://nb8daasaeu3i"]
+[gd_scene load_steps=7 format=3 uid="uid://nb8daasaeu3i"]
+
+[ext_resource type="AudioStream" uid="uid://daeeqhtb2f8cn" path="res://sounds/Explosion31.wav" id="1_nutfp"]
 
 [sub_resource type="Curve" id="Curve_up16n"]
 _data = [Vector2(0.0118733, 0.989289), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -37,3 +39,7 @@ process_material = SubResource("ParticleProcessMaterial_8i2hp")
 lifetime = 0.5
 one_shot = true
 explosiveness = 1.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_nutfp")
+autoplay = true
