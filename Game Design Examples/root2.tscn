@@ -32,7 +32,6 @@ bullet_spawn = NodePath("shoot_point")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="player"]
 stream = ExtResource("5_64ubd")
-autoplay = true
 script = ExtResource("6_ub0si")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
