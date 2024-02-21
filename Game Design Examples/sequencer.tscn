@@ -1,41 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://bv1vlrmjcjsna"]
+[gd_scene load_steps=6 format=3 uid="uid://bv1vlrmjcjsna"]
 
 [ext_resource type="Material" uid="uid://caap4ab5nopa3" path="res://pad_material.tres" id="1_nvuou"]
+[ext_resource type="Script" path="res://root1.gd" id="1_xgocf"]
 [ext_resource type="Script" path="res://Sequencer.gd" id="2_f7sqc"]
+[ext_resource type="PackedScene" uid="uid://bpn8atbwc7aar" path="res://pad.tscn" id="2_f3755"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_vxnig"]
 
-[node name="Node2D" type="Node2D"]
+[node name="root" type="Node2D"]
+script = ExtResource("1_xgocf")
 
-[node name="pads" type="Node2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="pads"]
-modulate = Color(0.941176, 0, 0.941176, 1)
-material = ExtResource("1_nvuou")
-position = Vector2(112, 112)
-scale = Vector2(100, 100)
-texture = SubResource("CanvasTexture_vxnig")
-
-[node name="Sprite2D2" type="Sprite2D" parent="pads"]
-modulate = Color(0.941176, 0, 0.941176, 1)
-material = ExtResource("1_nvuou")
-position = Vector2(248, 112)
-scale = Vector2(100, 100)
-texture = SubResource("CanvasTexture_vxnig")
-
-[node name="Sprite2D3" type="Sprite2D" parent="pads"]
-modulate = Color(0.941176, 0, 0.941176, 1)
-material = ExtResource("1_nvuou")
-position = Vector2(384, 112)
-scale = Vector2(100, 100)
-texture = SubResource("CanvasTexture_vxnig")
-
-[node name="Sprite2D4" type="Sprite2D" parent="pads"]
-modulate = Color(0.941176, 0, 0.941176, 1)
-material = ExtResource("1_nvuou")
-position = Vector2(512, 112)
-scale = Vector2(100, 100)
-texture = SubResource("CanvasTexture_vxnig")
+[node name="sequencer" type="Node2D" parent="."]
+position = Vector2(140, 93)
+script = ExtResource("2_f7sqc")
+pad_scene = ExtResource("2_f3755")
 
 [node name="controls" type="Node2D" parent="."]
 position = Vector2(24, 368)
@@ -98,6 +76,3 @@ material = ExtResource("1_nvuou")
 position = Vector2(112, 368)
 scale = Vector2(100, 100)
 texture = SubResource("CanvasTexture_vxnig")
-
-[node name="Sequencer" type="Node" parent="."]
-script = ExtResource("2_f7sqc")

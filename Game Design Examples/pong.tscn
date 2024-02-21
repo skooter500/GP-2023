@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://diutp2s8urotf"]
+
+[ext_resource type="Script" path="res://bat2.gd" id="3_f3r6t"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_oppqv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xs3le"]
+size = Vector2(50, 200)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_20b8q"]
+bounce = 1.0
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_8ufgf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_61qtf"]
+size = Vector2(50, 50)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="bat2" type="CharacterBody2D" parent="."]
+position = Vector2(943, 253)
+script = ExtResource("3_f3r6t")
+
+[node name="Sprite2D" type="Sprite2D" parent="bat2"]
+scale = Vector2(50, 200)
+texture = SubResource("CanvasTexture_oppqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bat2"]
+shape = SubResource("RectangleShape2D_xs3le")
+
+[node name="ball" type="RigidBody2D" parent="."]
+position = Vector2(270, 253)
+physics_material_override = SubResource("PhysicsMaterial_20b8q")
+linear_velocity = Vector2(200, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ball"]
+scale = Vector2(50, 50)
+texture = SubResource("CanvasTexture_8ufgf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ball"]
+shape = SubResource("RectangleShape2D_61qtf")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+text = "Hello
+"
+
+[node name="Button" type="Button" parent="."]
+offset_top = 133.0
+offset_right = 77.0
+offset_bottom = 164.0
+text = "Click Me!"
+
+[connection signal="pressed" from="Button" to="bat2" method="_on_button_pressed"]

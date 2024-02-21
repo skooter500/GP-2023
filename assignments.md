@@ -1,3 +1,28 @@
+# Assignment 2
+
+Playful Musical Experience Inspired by a trad session in the Cobblestone.
+
+For this assignment we will visit the Cobblestone Pub, in Smithfield and observe, record, photograph, speak to and listen to the musicians. To learn more about the Cobblestone and the Mulligan Family, watch this documentary:
+
+Subsequently you will form a team of up to 4 people and create "a playful musical experience" based around what you learn from your research in the Cobblestone and your creativity. 
+
+"A playful musical experience" is an experimental music project that you will make. It can be a soundboard, sequencer, audio effects, looper, DAW or a crazy experimental musical instrument. It can take input from voice or a real instrument or MIDI controller, game controller, input device. 
+
+Each team member must make a seperate instrument or part of an instrument.
+
+At the conclusion of your project, your team will perform a "cyber trad session" where you will perform a piece of experimental trad music on your instruments in front of an audience.
+
+The project should be made in Godot and must be managed in a git repository. It can be 2D, 3D or VR. Each person on the team must write code and make commits. 
+
+## Rubric
+
+| Category | Weighting | 1 | 2.1 | 2.2 | Pass | Fail |
+|----------|-----------|--------|
+| Complexity | 25% | Use of complex algorithms. For loops and arrays. Use of advanced systems in Godot. A lot of new nodes created. Complex UI interaction such as drag and drop, timers, UI controls. UI created procedurally. Lots of variety in the sounds created. Use of controllers or external input. The instrument is "programmable". Sound is generated procedurally. Excellent visual feedback | Simple UI based on clicking buttons to make sounds. Use of loops and at least one array. Use of timers. UI is generated in editor.  No external input. Good variety of sounds. Based on a real instrument | A basic soundboard with buttions to make sounds | Forked the repo, made some commits, not much working | Failed to fork the repo, no commits made |
+| Aesthetic | 25% | Novel user interface for making sound. Complex button and knob arrangement. High quality of visual design. Original, high quality assets produced. Original high quality audio. Visually coherent and easy to use. Great variety of musical expressiveness. Sounds are interesting and coherent | Straightforward, intuitive interface | Some assets made and some acquired from online sources. Not too much variety in the expressiveness of the instrument | Simple or unintuitive user interface. User interface made from premade assets. Sound are premade or made using simple tools | Basic user interface that makes sound, without any expressivness. | Project doesnt make sound
+| Performance | 25% | Team performs and original piece of experimental trad music for a duration of 3 minutes on their instruments. Each team member presses buttons on the thing they have made and contributes sound to the performance. Live instruments incorporated. Visuals incorporated (music be made and controlled in Godot). Team synchronises their performance like in a trad session. Special costumes made or an interpretive dance prepared to work with the music being performed | Team performs and original piece of experimental trad music for a duration of 3 minutes on their instruments. No live instruments, costumes or special dances | Team performs a 1 minute piece of music. No coordination, but everybody plays together | No performance, just a demo where the team shows their instruments | No performance and no demo |
+| Teamwork & Documentation | 25% | 
+
 # Assignment 1
 
 ![image](images/FB-2048x1075.jpg)
