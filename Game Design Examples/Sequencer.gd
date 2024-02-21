@@ -3,18 +3,15 @@ extends Node
 var samples:Array
 var pads:Dictionary
 
-<<<<<<< HEAD
 @export var path_str = "res://sounds" 
 @export var pad_scene:PackedScene
 @export var num_pads = 8
-=======
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# Set the path to the folder containing the WAV files
 	var folder_path = "res://sounds/"
->>>>>>> e26a24ec5ef0609f5bc2145974ade1ba9e34adb7
 
 func make_pads():
 	var w
