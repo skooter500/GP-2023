@@ -1,12 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://bcumpm0udhbff"]
+[gd_scene load_steps=12 format=3 uid="uid://bcumpm0udhbff"]
 
 [ext_resource type="Script" path="res://root1.gd" id="1_fykjs"]
 [ext_resource type="FontFile" uid="uid://0jk2p2kfmllu" path="res://fonts/Hyperspace Bold.otf" id="2_omtv0"]
 [ext_resource type="Script" path="res://player2.gd" id="3_j8y1e"]
 [ext_resource type="PackedScene" uid="uid://dcn4soippejj5" path="res://bullet.tscn" id="4_luoey"]
+[ext_resource type="AudioStream" uid="uid://bq4kjn4r61ps2" path="res://sounds/jet.wav" id="5_64ubd"]
 [ext_resource type="PackedScene" uid="uid://bwi6lmhwtpkeh" path="res://block.tscn" id="5_cr6ka"]
 [ext_resource type="Script" path="res://spawner.gd" id="5_qpayn"]
 [ext_resource type="Theme" uid="uid://bsyatf2qyqicf" path="res://bryans_theme.tres" id="6_13b7g"]
+[ext_resource type="Script" path="res://jet_sound.gd" id="6_ub0si"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_m7bvt"]
 
@@ -27,6 +29,10 @@ power = 4000.0
 rot_power = 40000.0
 bullet = ExtResource("4_luoey")
 bullet_spawn = NodePath("shoot_point")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="player"]
+stream = ExtResource("5_64ubd")
+script = ExtResource("6_ub0si")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
 modulate = Color(0.623529, 0.52549, 0.27451, 1)

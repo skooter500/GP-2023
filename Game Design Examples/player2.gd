@@ -6,6 +6,8 @@ extends RigidBody2D
 @export var bullet:PackedScene
 @export var bullet_spawn:Node2D
 
+var f
+
 var can_fire = true;
 
 func _ready():
@@ -19,7 +21,7 @@ func _physics_process(delta):
 	var r = Input.get_axis("left", "right")
 	apply_torque(rot_power * r)
 	
-	var f = Input.get_axis("back", "forward")
+	f = Input.get_axis("back", "forward")
 	
 	var force = power * -transform.y * f
 	DebugDraw2D.set_text("Force", force)

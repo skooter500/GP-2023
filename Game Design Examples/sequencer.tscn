@@ -76,3 +76,8 @@ material = ExtResource("1_nvuou")
 position = Vector2(112, 368)
 scale = Vector2(100, 100)
 texture = SubResource("CanvasTexture_vxnig")
+
+[node name="Area2D" type="Area2D" parent="drums"]
+
+[node name="Sequencer" type="Node" parent="."]
+script = ExtResource("2_f7sqc")
