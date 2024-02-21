@@ -1,29 +1,30 @@
 # Assignment 2
 
-"Playful Musical Experience" inspired by a trad session in the Cobblestone.
+"Playful Musical Experience" 
 
-For this assignment we will visit the Cobblestone Pub in Smithfield and observe, record, photograph, speak to and listen to the musicians. To learn more about the Cobblestone and the Mulligan Family, watch this documentary:
+![](images/cybertrad.png.jpg)
 
-- [Love Letter To The Cobblestone](https://www.rte.ie/culture/2023/0524/1385428-love-letter-to-the-cobblestone-a-legendary-dublin-pub-celebrated/)
+For this assignment you will be exploring musical play and experimentation, by creating virtual musical instruments using Godot and performing in a band with instruments you make.
 
-Subsequently you will form a team of up to 4 people and create a "playful musical experience" based around what you learn from your research. 
+Form a team of up to 4 people:
 
-"A playful musical experience" is an experimental music project that you will make. It can be a soundboard, sequencer, audio effects, looper, DAW or a crazy experimental musical instrument. It can take input from voice or a real instrument or MIDI controller, game controller, input device. 
 
-Each team member must make a seperate instrument or part of an instrument.
+- Do research! Explore trad sessions, drum and bass, psytrance music, sequencers, drum machines, theramins, DAW's
+- Create virtual musical instruments using Godot. You can use the sounds you record from real instruments or, your voice or the world around you. Your instrument can be a simple soundboard or a full sequencer. The more complex and fully featured, the better mark you will achieve. You can add sequencing, audio effects, looping, experimental input system using voice or a real instrument or MIDI controller, game controller, camera, input device. 
+- Each team member will make a separate instrument, or element of an instrument they can play in a a live performance at the conclusion of the project.
+- You can design your instrument and UI and functionality on paper and I will teach you what you need to know about music and Godot to bring the instrument to life
+- The project should be made in Godot and must be managed in a git repository. It can be 2D, 3D or VR. Each person on the team must write code and make commits. 
 
-At the conclusion of your project, your team will perform a "cyber trad session" where you will perform a piece of experimental trad music on your instruments.
 
-The project should be made in Godot and must be managed in a git repository. It can be 2D, 3D or VR. Each person on the team must write code and make commits. 
 
 ## Rubric
 
 | Category | Weighting | 1 | 2.1 | 2.2 | Pass | Fail |
 |----------|-----------|--------|----|----|----|----|
-| Complexity | 25% | Use of complex algorithms. For loops and arrays. Use of advanced systems in Godot. A lot of new nodes created. Complex UI interaction such as drag and drop, timers, UI controls. UI created procedurally. Lots of variety in the sounds created. Use of controllers or external input. The instrument is "programmable". Sound is generated procedurally. Excellent visual feedback | Simple UI based on clicking buttons to make sounds. Use of loops and at least one array. Use of timers. UI is generated in editor.  No external input. Good variety of sounds. Based on a real instrument | A basic soundboard with buttions to make sounds | Forked the repo, made some commits, not much working | Failed to fork the repo, no commits made |
-| Aesthetic | 25% | Novel user interface for making sound. Complex button and knob arrangement. High quality of visual design. Original, high quality assets produced. Original high quality audio. Visually coherent and easy to use. Great variety of musical expressiveness. Sounds are interesting and coherent | Straightforward, intuitive interface | Some assets made and some acquired from online sources. Not too much variety in the expressiveness of the instrument | Simple or unintuitive user interface. User interface made from premade assets. Sound are premade or made using simple tools | Basic user interface that makes sound, without any expressivness. | Project doesnt make sound
-| Performance | 25% | Team performs and original piece of experimental trad music for a duration of 3 minutes on their instruments. Each team member presses buttons on the thing they have made and contributes sound to the performance. Live instruments incorporated. Visuals incorporated (music be made and controlled in Godot). Team synchronises their performance like in a trad session. Special costumes made or an interpretive dance prepared to work with the music being performed | Team performs and original piece of experimental trad music for a duration of 3 minutes on their instruments. No live instruments, costumes or special dances | Team performs a 1 minute piece of music. No coordination, but everybody plays together | No performance, just a demo where the team shows their instruments | No performance and no demo |
-| Teamwork & Documentation | 25% | Large number of individual commits. Each team member makes equal commits. High quality video and detailed documentation. Team met and collaborated regularly. Commits evenly spaced throughout the project | 
+| Complexity | 25% | Use of complex algorithms. For loops and arrays. Use of advanced systems in Godot. A lot of new nodes created. Complex UI interaction such as drag and drop, timers, UI controls. UI created procedurally. Lots of variety in the sounds created. Use of controllers or external input. The instrument is "programmable". Sound is generated procedurally. Excellent visual feedback | Simple UI based on clicking buttons to make sounds. Use of loops and at least one array. Use of timers. UI is generated in editor.  No external input. Good variety of sounds. Based on a real instrument | A basic soundboard with buttions to make sounds | Forked the repo, made some commits, not much working, but it makes a sound | Failed to fork the repo, no commits made |
+| Aesthetic | 25% | Novel user interface for creating live sound. Complex button and knob arrangement. High quality of visual design. Original, high quality assets produced. Original high quality recorded audio. Visually coherent and easy to use. Great variety of musical expressiveness. Sounds are interesting and coherent. Crazy and beautiful and lots of novelty | Straightforward, intuitive interface with a reasonable amount of control of a good range of sound. Ability to perform live with a good degree of expression. Some simple assets created. | Basic interface with one screen. Some assets made and some acquired from online sources. Not too much variety in the expressiveness of the instrument | Simple or unintuitive user interface. User interface made from premade assets. Sound are premade or made using simple tools | Basic user interface that makes sound, without any expressiveness or novelty or much fun. | Project doesnt make any sound
+| Performance | 25% | Team performs an original piece of experimental music for a duration of 5 minutes on their instruments. Each team member presses buttons on the thing they have made and contributes sound to the performance. Live instruments incorporated. Visuals incorporated (music be made and controlled in Godot). Team synchronises their performance. Special costumes made. Use of facepaint. Drag. An interpretive dance performance | Team performs and original piece of experimental music for a duration of 3 minutes on their instruments. No live instruments, costumes or special dances | Team performs a 1 minute piece of music. No coordination, but everybody plays together | No performance, just a demo where the team shows their instruments | No performance and no demo |
+| Teamwork & Documentation | 25% | Large number of individual commits. Each team member makes equal commits. High quality video and detailed documentation, with all sections completed. Team met and collaborated regularly and showed progress each week. Commits evenly spaced throughout the project | Smaller number of commits over a shorter period of time, but a good bit of work evident in the latter weeks of the project. Video and documentation completed to high standard | All done in week or two before the delivery date. Lots of commits in last two weeks. Documentation incomplete or video incomplete. | All done in the final week. Incomplete documentation or video. Few commits | No use of git. project doesnt work |
 
 # Assignment 1
 
