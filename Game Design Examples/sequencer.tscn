@@ -1,17 +1,68 @@
-[gd_scene load_steps=5 format=3 uid="uid://bv1vlrmjcjsna"]
+[gd_scene load_steps=7 format=3 uid="uid://bv1vlrmjcjsna"]
 
 [ext_resource type="Script" path="res://root1.gd" id="1_xgocf"]
 [ext_resource type="Script" path="res://Sequencer.gd" id="2_f7sqc"]
 [ext_resource type="PackedScene" uid="uid://bpn8atbwc7aar" path="res://pad.tscn" id="2_f3755"]
+[ext_resource type="Script" path="res://Test.gd" id="5_smogp"]
 [ext_resource type="PackedScene" uid="uid://c1cjkmj4t8ly6" path="res://patch_scene.tscn" id="6_813co"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a642a"]
+size = Vector2(100, 100)
 
 [node name="root" type="Node2D"]
 script = ExtResource("1_xgocf")
 
+[node name="Area2D" type="Area2D" parent="."]
+modulate = Color(0.0509804, 1, 0.176471, 1)
+position = Vector2(250, 498)
+script = ExtResource("5_smogp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_a642a")
+
+[node name="ColorRect" type="ColorRect" parent="Area2D"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Area2D2" type="Area2D" parent="."]
+modulate = Color(0.0509804, 1, 0.176471, 1)
+position = Vector2(474, 498)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource("RectangleShape2D_a642a")
+
+[node name="ColorRect" type="ColorRect" parent="Area2D2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="sequencer" type="Node2D" parent="."]
+visible = false
 position = Vector2(50, 50)
 script = ExtResource("2_f7sqc")
 pad_scene = ExtResource("2_f3755")
 patch_scene = ExtResource("6_813co")
 
-[node name="drum" type="Node2D" parent="."]
+[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered"]
+[connection signal="area_exited" from="Area2D" to="Area2D" method="_on_area_exited"]
+[connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_mouse_entered"]
+[connection signal="mouse_shape_entered" from="Area2D" to="Area2D" method="_on_mouse_shape_entered"]
+[connection signal="mouse_entered" from="Area2D2" to="Area2D2" method="_on_mouse_entered"]
+[connection signal="mouse_shape_entered" from="Area2D2" to="Area2D2" method="_on_mouse_shape_entered"]

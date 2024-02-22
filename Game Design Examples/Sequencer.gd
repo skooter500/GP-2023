@@ -13,7 +13,7 @@ var pads:Dictionary
 func _ready():
 	# Set the path to the folder containing the WAV files
 	var folder_path = "res://sounds/"	
-	make_pads()
+	# make_pads()
 	load_samples()
 	make_patches()
 
@@ -45,6 +45,7 @@ func make_patches():
 		patch.position = p
 		
 		patch.find_child("RichTextLabel", true).set_text(samples[i].resource_name)
+		patch.find_child("AudioStreamPlayer2D").stream = samples[i]
 		add_child(patch)
 		
 func load_samples():
