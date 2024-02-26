@@ -5,7 +5,7 @@ var pads:Dictionary
 
 @export var path_str = "res://sounds" 
 @export var pad_scene:PackedScene
-@export var patch_scene:PackedScene
+@export var sample_scene:PackedScene
 
 @export var num_pads = 8
 
@@ -13,11 +13,9 @@ var pads:Dictionary
 func _ready():
 	# Set the path to the folder containing the WAV files
 	var folder_path = "res://sounds/"	
-	make_pads()
+	# make_pads()
 	load_samples()
-	make_patches()
-
-
+	make_samplees()
 
 func make_pads():
 	var w
@@ -31,21 +29,25 @@ func make_pads():
 		var p = Vector2((i * (w + g)), 0)
 		pad.position = p
 		add_child(pad)
+		
+func play_sample(i):
+	
+	var p:AudioStreamWAV = samples[i]
+	$AudioStreamPlayer.stream = p
+	$AudioStreamPlayer.play()
 
-func make_patches():
-	var w
-	var g
+func make_samplees():
 	for i in range(samples.size()):
-		var patch = patch_scene.instantiate()
-		var ww:ColorRect = patch.get_node("rect")
-		w = ww.get_size().x
-		g = w * 0.1
+		var sample = sample_scene.instantiate()
+		var b:Button = sample.get_node("Button")
+		b.connect("pressed", play_sample.bind(i))
+		var h = b.get_size().y
 		
-		var p = Vector2((i * (w + g)), g)
-		patch.position = p
+		var p = Vector2(0, h * i * 1.1)
+		sample.position = p
 		
-		patch.find_child("RichTextLabel", true).set_text(samples[i].resource_name)
-		add_child(patch)
+		b.set_text(samples[i].resource_name)
+		add_child(sample)
 		
 func load_samples():
 	var dir = DirAccess.open(path_str)

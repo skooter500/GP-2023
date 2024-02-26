@@ -7,7 +7,7 @@
 For this assignment you will be exploring musical play and experimentation, by creating virtual musical instruments using Godot and performing in a band with instruments you make.
 
 Form a team of up to 4 people:
-
+    
 
 - Do research! Explore trad sessions, drum and bass, psytrance music, sequencers, drum machines, theramins, DAW's
 - Create virtual musical instruments using Godot. You can use the sounds you record from real instruments or, your voice or the world around you. Your instrument can be a simple soundboard or a full sequencer. The more complex and fully featured, the better mark you will achieve. You can add sequencing, audio effects, looping, experimental input system using voice or a real instrument or MIDI controller, game controller, camera, input device. 
