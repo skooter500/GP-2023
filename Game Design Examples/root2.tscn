@@ -76,4 +76,6 @@ offset_right = 1000.0
 offset_bottom = 50.0
 text = "Click the screen to create things to shoot"
 
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
 [connection signal="timeout" from="player/Timer" to="player" method="_on_timer_timeout"]
