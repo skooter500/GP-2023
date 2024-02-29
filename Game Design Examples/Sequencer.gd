@@ -33,7 +33,7 @@ func make_pads():
 		
 func play_sample(i):
 	
-	var p:AudioStreamWAV = samples[i]
+	var p:AudioStream = samples[i]
 	$AudioStreamPlayer.stream = p
 	$AudioStreamPlayer.play()
 
@@ -41,7 +41,7 @@ func make_samplees():
 	for i in range(samples.size()):
 		var sample = sample_scene.instantiate()
 		var b:Button = sample.get_node("Button")
-		# b.connect("pressed", play_sample.bind(i))
+		b.connect("pressed", play_sample.bind(i))
 		
 		
 		var h = b.get_size().y
@@ -61,14 +61,7 @@ func load_samples():
 			if dir.current_is_dir():
 				print("Found directory: " + file_name)
 			elif file_name.ends_with(".wav"):				
-				var stream
-				var file = FileAccess.open(path_str + "/" + file_name, FileAccess.READ)
-				var buffer = file.get_buffer(file.get_length())
-				stream = AudioStreamWAV.new()
-				stream.format = AudioStreamWAV.FORMAT_16_BITS		
-				stream.data = buffer
-				stream.stereo = true
+				var stream = load(path_str + "/" + file_name)
 				stream.resource_name = file_name
-				file.close() 
 				samples.push_back(stream)
 			file_name = dir.get_next()	
