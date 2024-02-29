@@ -1,3 +1,4 @@
+# Hello from Mary
 extends Node
 
 var samples:Array
@@ -40,20 +41,16 @@ func make_samplees():
 	for i in range(samples.size()):
 		var sample = sample_scene.instantiate()
 		var b:Button = sample.get_node("Button")
-		b.connect("pressed", play_sample.bind(i))
+		# b.connect("pressed", play_sample.bind(i))
+		
+		
 		var h = b.get_size().y
 		
 		var p = Vector2(0, h * i * 1.1)
 		sample.position = p
 		
-<<<<<<< HEAD
 		b.set_text(samples[i].resource_name)
 		add_child(sample)
-=======
-		patch.find_child("RichTextLabel", true).set_text(samples[i].resource_name)
-		patch.find_child("AudioStreamPlayer2D").stream = samples[i]
-		add_child(patch)
->>>>>>> 5aba331cda6c5ff34f33281103c3260f8e86df11
 		
 func load_samples():
 	var dir = DirAccess.open(path_str)
