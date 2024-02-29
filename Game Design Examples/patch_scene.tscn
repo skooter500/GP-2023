@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://c1cjkmj4t8ly6"]
+[gd_scene load_steps=4 format=3 uid="uid://libv83j2xcqa"]
 
+[ext_resource type="Script" path="res://patch.gd" id="1_64se4"]
 [ext_resource type="Theme" uid="uid://bsyatf2qyqicf" path="res://bryans_theme.tres" id="1_wya1o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hpl3n"]
 size = Vector2(100, 100)
 
 [node name="patch" type="Area2D"]
+script = ExtResource("1_64se4")
 
 [node name="rect" type="ColorRect" parent="."]
 anchors_preset = 8
@@ -32,3 +34,8 @@ scroll_active = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_hpl3n")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bcumpm0udhbff"]
+[gd_scene load_steps=12 format=3 uid="uid://c8elln7vnpsr0"]
 
 [ext_resource type="Script" path="res://root1.gd" id="1_fykjs"]
 [ext_resource type="FontFile" uid="uid://0jk2p2kfmllu" path="res://fonts/Hyperspace Bold.otf" id="2_omtv0"]
@@ -75,5 +75,7 @@ layout_mode = 0
 offset_right = 1000.0
 offset_bottom = 50.0
 text = "Click the screen to create things to shoot"
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
 [connection signal="timeout" from="player/Timer" to="player" method="_on_timer_timeout"]

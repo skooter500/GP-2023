@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://bwi6lmhwtpkeh"]
+[gd_scene load_steps=5 format=3 uid="uid://bwi6lmhwtpkeh"]
 
 [ext_resource type="Script" path="res://block.gd" id="1_4urbb"]
-[ext_resource type="AudioStream" uid="uid://biq3k2p3qbvjk" path="res://sounds/Powerup18.wav" id="2_rjrej"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_04on2"]
 
@@ -24,5 +23,6 @@ position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_v5iuy")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("2_rjrej")
 autoplay = true
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

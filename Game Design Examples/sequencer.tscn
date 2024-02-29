@@ -1,17 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://bv1vlrmjcjsna"]
+[gd_scene load_steps=5 format=3 uid="uid://cjvtpwhuflwia"]
 
 [ext_resource type="Script" path="res://root1.gd" id="1_xgocf"]
-[ext_resource type="Script" path="res://Sequencer.gd" id="2_f7sqc"]
+[ext_resource type="Script" path="res://sequencer.gd" id="2_f7sqc"]
 [ext_resource type="PackedScene" uid="uid://bpn8atbwc7aar" path="res://pad.tscn" id="2_f3755"]
-[ext_resource type="PackedScene" uid="uid://c1cjkmj4t8ly6" path="res://patch_scene.tscn" id="6_813co"]
+[ext_resource type="PackedScene" uid="uid://c1cjkmj4t8ly6" path="res://sample_scene.tscn" id="6_813co"]
 
 [node name="root" type="Node2D"]
 script = ExtResource("1_xgocf")
 
 [node name="sequencer" type="Node2D" parent="."]
-position = Vector2(50, 50)
+position = Vector2(152, 72)
 script = ExtResource("2_f7sqc")
 pad_scene = ExtResource("2_f3755")
-patch_scene = ExtResource("6_813co")
+sample_scene = ExtResource("6_813co")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="sequencer"]
 
 [node name="drum" type="Node2D" parent="."]
