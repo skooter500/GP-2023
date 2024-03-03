@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://boj7r5sxp0bce"]
+
+[ext_resource type="Script" path="res://bug_player.gd" id="1_vqb0a"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_rvup1"]
+size = Vector2(50, 20)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2f7eg"]
+size = Vector2(10, 30)
+
+[node name="root" type="Node2D"]
+
+[node name="player" type="CharacterBody2D" parent="."]
+position = Vector2(464, 968)
+script = ExtResource("1_vqb0a")
+
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+texture = SubResource("PlaceholderTexture2D_rvup1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="player"]
+position = Vector2(0, -24)
+texture = SubResource("PlaceholderTexture2D_2f7eg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="player"]
+polygon = PackedVector2Array(-25, -10, -5, -10, -5, -39, 5, -39, 5, -10, 25, -10, 25, 10, -25, 10)

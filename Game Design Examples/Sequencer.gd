@@ -16,7 +16,7 @@ func _ready():
 	var folder_path = "res://sounds/"	
 	# make_pads()
 	load_samples()
-	make_samplees()
+	make_sample_buttons()
 
 func make_pads():
 	var w
@@ -37,12 +37,11 @@ func play_sample(i):
 	$AudioStreamPlayer.stream = p
 	$AudioStreamPlayer.play()
 
-func make_samplees():
+func make_sample_buttons():
 	for i in range(samples.size()):
 		var sample = sample_scene.instantiate()
 		var b:Button = sample.get_node("Button")
 		b.connect("pressed", play_sample.bind(i))
-		
 		
 		var h = b.get_size().y
 		
