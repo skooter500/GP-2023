@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://boj7r5sxp0bce"]
+[gd_scene load_steps=6 format=3 uid="uid://boj7r5sxp0bce"]
 
 [ext_resource type="Script" path="res://bug_player.gd" id="1_vqb0a"]
+[ext_resource type="Script" path="res://bug.gd" id="2_a76s6"]
+[ext_resource type="Texture2D" uid="uid://c844yfbd26ea8" path="res://sprites/bug.png" id="2_l8avy"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_rvup1"]
 size = Vector2(50, 20)
@@ -23,3 +25,19 @@ texture = SubResource("PlaceholderTexture2D_2f7eg")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="player"]
 polygon = PackedVector2Array(-25, -10, -5, -10, -5, -39, 5, -39, 5, -10, 25, -10, 25, 10, -25, 10)
+
+[node name="bug" type="Area2D" parent="."]
+position = Vector2(278, 113)
+script = ExtResource("2_a76s6")
+
+[node name="Timer" type="Timer" parent="bug"]
+wait_time = 0.5
+autostart = true
+
+[node name="Sprite2D" type="Sprite2D" parent="bug"]
+texture = ExtResource("2_l8avy")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="bug"]
+polygon = PackedVector2Array(-16, 15, -11, 1, -16, 2, -17, -2, -1, -19, 19, 1, 9, 1, 9, 6, 16, 12, 15, 18, 8, 17, 2, 10, 3, 5, -3, 1, -8, 17)
+
+[connection signal="timeout" from="bug/Timer" to="bug" method="_on_timer_timeout"]
