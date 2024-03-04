@@ -28,8 +28,9 @@ func _on_timer_timeout():
 	if target_pos.x > w - 20:
 		target_pos.x = w - 20 
 	target_pos.y += 20
+	if randi_range(0, 2) == 0:
+		$AudioStreamPlayer2D.play()
 	
-	if randi_range(0, 3) == 0:
 		drop_bomb()
 	
 	pass # Replace with function body.

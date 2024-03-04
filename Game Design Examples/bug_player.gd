@@ -15,9 +15,10 @@ func _ready():
 func _process(delta):
 	if Input.is_action_pressed("fire"):
 		laser.visible = true
-		var p = laser.get_point_position(1)
-		p.y = bug.position.y
-		# laser.set_point_position(1, p)
+		var to_bug = laser.global_position.y - bug.global_position.y 
+		var p = laser.get_point_position(0)
+		p.y = - to_bug
+		laser.set_point_position(1, p)
 	else:
 		laser.visible = false
 	
