@@ -14,6 +14,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	global_position = lerp(global_position, target_pos, delta)
 	pass
 
 
@@ -26,7 +27,7 @@ func _on_timer_timeout():
 	var w = get_viewport_rect().size.x
 	if target_pos.x > w - 20:
 		target_pos.x = w - 20 
-	# position.y += 20
+	target_pos.y += 20
 	
 	if randi_range(0, 3) == 0:
 		drop_bomb()
