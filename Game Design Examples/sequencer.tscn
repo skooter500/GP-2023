@@ -11,6 +11,7 @@ script = ExtResource("1_xgocf")
 [node name="sequencer" type="Node2D" parent="."]
 position = Vector2(152, 72)
 script = ExtResource("2_f7sqc")
+path_str = "res://sounds"
 pad_scene = ExtResource("3_e7xm4")
 sample_scene = ExtResource("3_e7xm4")
 
