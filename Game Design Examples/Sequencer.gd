@@ -1,4 +1,4 @@
-
+# Hello from Mary
 extends Node
 
 var samples:Array
@@ -16,7 +16,7 @@ func _ready():
 	var folder_path = "res://sounds/"	
 	# make_pads()
 	load_samples()
-	make_samplees()
+	make_sample_buttons()
 
 func make_pads():
 	var w
@@ -38,16 +38,15 @@ func button_pressed(i):
 
 func play_sample(i):
 	
-	var p:AudioStreamWAV = samples[i]
+	var p:AudioStream = samples[i]
 	$AudioStreamPlayer.stream = p
 	$AudioStreamPlayer.play()
 
-func make_samplees():
+func make_sample_buttons():
 	for i in range(samples.size()):
 		var sample = sample_scene.instantiate()
 		var b:Button = sample.get_node("Button")
-		b.pressed.connect(button_pressed.bind(i))
-		
+		b.connect("pressed", play_sample.bind(i))
 		
 		# var b = sample.get_node("rect")
 		var h = b.get_size().y
@@ -67,18 +66,8 @@ func load_samples():
 			if dir.current_is_dir():
 				print("Found directory: " + file_name)
 			elif file_name.ends_with(".wav"):				
-				var stream
-				# var file = FileAccess.open(path_str + "/" + file_name, FileAccess.READ)
-				# var buffer = file.get_buffer(file.get_length())
-				# stream = AudioStreamOggVorbis.load_from_file(path_str + "/" + file_name)
-				var audio_loader = AudioLoader.new()
-				$AudioStreamPlayer.stream =  audio_loader.loadfile(path_str + "/" + file_name)
-				
-				# stream.format = AudioStreamWAV.FORMAT_16_BITS		
-				# stream = 
-				# stream.stereo = true
-				# stream.resource_name = file_name
-				# file.close() 
+				var stream = load(path_str + "/" + file_name)
+				stream.resource_name = file_name
 				samples.push_back(stream)
 				$AudioStreamPlayer.play()
 				break
