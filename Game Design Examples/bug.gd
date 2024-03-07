@@ -2,10 +2,9 @@ extends Area2D
 
 @export var bomb_spawn:Node2D
 @export var bomb_scene:PackedScene
+@export var explosion_scene:PackedScene
 
 var target_pos:Vector2
-
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -41,3 +40,12 @@ func drop_bomb():
 	bomb.global_position = bomb_spawn.global_position 
 	get_tree().root.add_child(bomb)
 	pass # Replace with function body.
+
+
+func _on_area_entered(area):
+	if area.name == "laser":
+		var explosion = explosion_scene.instantiate()
+		explosion.global_position = global_position
+		explosion.emitting = true
+		get_tree().root.add_child(explosion)
+		self.queue_free()		

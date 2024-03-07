@@ -1,12 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://bl1dhmkl8ptjm"]
+[gd_scene load_steps=9 format=3 uid="uid://bl1dhmkl8ptjm"]
 
-[ext_resource type="Script" path="res://root1.gd" id="1_u773i"]
+[ext_resource type="Script" path="res://bugzap.gd" id="1_s2q5l"]
 [ext_resource type="Script" path="res://bug_player.gd" id="1_vqb0a"]
-[ext_resource type="Script" path="res://bug.gd" id="2_a76s6"]
-[ext_resource type="Texture2D" uid="uid://c844yfbd26ea8" path="res://sprites/bug.png" id="2_l8avy"]
 [ext_resource type="PackedScene" uid="uid://nb8daasaeu3i" path="res://explosion.tscn" id="2_rwge8"]
-[ext_resource type="PackedScene" path="res://bomb.tscn" id="4_22d7d"]
-[ext_resource type="AudioStream" uid="uid://dr7urkmsac1h7" path="res://sounds/Laser_Shoot42.wav" id="7_8mqud"]
+[ext_resource type="Theme" uid="uid://bsyatf2qyqicf" path="res://bryans_theme.tres" id="8_12hsc"]
+[ext_resource type="Script" path="res://bug_spawner.gd" id="9_oaua2"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_rvup1"]
 size = Vector2(50, 20)
@@ -14,8 +12,11 @@ size = Vector2(50, 20)
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2f7eg"]
 size = Vector2(10, 30)
 
-[node name="root" type="Node2D"]
-script = ExtResource("1_u773i")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7kvm8"]
+size = Vector2(16, 623)
+
+[node name="bugzap" type="Node2D"]
+script = ExtResource("1_s2q5l")
 
 [node name="player" type="CharacterBody2D" parent="."]
 position = Vector2(464, 730)
@@ -42,27 +43,33 @@ position = Vector2(0, -50)
 points = PackedVector2Array(0, 0, 0, 0)
 width = 5.0
 
-[node name="bug" type="Area2D" parent="." node_paths=PackedStringArray("bomb_spawn")]
-position = Vector2(278, 113)
-script = ExtResource("2_a76s6")
-bomb_spawn = NodePath("bomb_spawn")
-bomb_scene = ExtResource("4_22d7d")
+[node name="laser" type="Area2D" parent="player/laser"]
 
-[node name="Timer" type="Timer" parent="bug"]
-wait_time = 0.5
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player/laser/laser"]
+position = Vector2(2, -311)
+shape = SubResource("RectangleShape2D_7kvm8")
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+offset_right = 295.0
+offset_bottom = 72.0
+theme = ExtResource("8_12hsc")
+
+[node name="Label" type="Label" parent="VSplitContainer"]
+layout_mode = 2
+text = "SCORE: 0
+"
+
+[node name="Label2" type="Label" parent="VSplitContainer"]
+layout_mode = 2
+text = "LIVES: 3
+"
+
+[node name="bug_spawner" type="Node2D" parent="."]
+visible = false
+script = ExtResource("9_oaua2")
+
+[node name="Timer" type="Timer" parent="bug_spawner"]
 autostart = true
 
-[node name="Sprite2D" type="Sprite2D" parent="bug"]
-texture = ExtResource("2_l8avy")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="bug"]
-polygon = PackedVector2Array(-16, 15, -11, 1, -16, 2, -17, -2, -1, -19, 19, 1, 9, 1, 9, 6, 16, 12, 15, 18, 8, 17, 2, 10, 3, 5, -3, 1, -8, 17)
-
-[node name="bomb_spawn" type="Marker2D" parent="bug"]
-position = Vector2(0, 45)
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="bug"]
-stream = ExtResource("7_8mqud")
-
 [connection signal="area_entered" from="player/Area2D" to="player" method="_on_area_2d_area_entered"]
-[connection signal="timeout" from="bug/Timer" to="bug" method="_on_timer_timeout"]
+[connection signal="timeout" from="bug_spawner/Timer" to="bug_spawner" method="_on_timer_timeout"]

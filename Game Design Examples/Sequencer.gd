@@ -4,7 +4,7 @@ extends Node
 var samples:Array
 var pads:Dictionary
 
-@export var path_str = "res://sounds" 
+@export var path_str = "res://samples" 
 @export var pad_scene:PackedScene
 @export var sample_scene:PackedScene
 
@@ -45,7 +45,9 @@ func make_sample_buttons():
 		
 		var h = b.get_size().y
 		
-		var p = Vector2(0, h * i * 1.1)
+		var j = i % 10
+		var col = floor(i / 10)
+		var p = Vector2(col * 300, h * j * 1.1)
 		sample.position = p
 		
 		b.set_text(samples[i].resource_name)
