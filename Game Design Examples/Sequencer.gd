@@ -12,8 +12,7 @@ var pads:Dictionary
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	# Set the path to the folder containing the WAV files
-	var folder_path = "res://sounds/"	
+	# Set the path to the folder containing the WAV fes
 	# make_pads()
 	load_samples()
 	make_sample_buttons()
@@ -30,7 +29,12 @@ func make_pads():
 		var p = Vector2((i * (w + g)), 0)
 		pad.position = p
 		add_child(pad)
-		
+
+func button_pressed(i):
+	$AudioStreamPlayer.stream = samples[i]
+	$AudioStreamPlayer.play()
+	print(i)
+
 func play_sample(i):
 	
 	var p:AudioStream = samples[i]
@@ -41,12 +45,13 @@ func make_sample_buttons():
 	for i in range(samples.size()):
 		var sample = sample_scene.instantiate()
 		var b:Button = sample.get_node("Button")
-		b.connect("pressed", play_sample.bind(i))
+		b.connect("mouse_entered", play_sample.bind(i))
 		
+		# var b = sample.get_node("rect")
 		var h = b.get_size().y
 		
 		var j = i % 10
-		var col = floor(i / 10)
+		var col = floor(i / 10.0)
 		var p = Vector2(col * 300, h * j * 1.1)
 		sample.position = p
 		
@@ -65,4 +70,6 @@ func load_samples():
 				var stream = load(path_str + "/" + file_name)
 				stream.resource_name = file_name
 				samples.push_back(stream)
+				# $AudioStreamPlayer.play()
+				# break
 			file_name = dir.get_next()	

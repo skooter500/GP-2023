@@ -6,7 +6,7 @@ extends CharacterBody2D
 
 @onready var laser:Node2D=$laser
 
-@onready var bug:Node2D=$"../bug"
+@onready var bug = $"../bug"
 
 var can_move = true
 
@@ -19,7 +19,10 @@ func _process(delta):
 		var h = 16		
 		# Have we hit the bug
 		var p = laser.get_point_position(0)
-		
+		var space_state = get_world_2d().direct_space_state
+		# use global coordinates, not local to node
+		var query = PhysicsRayQueryParameters2D.create(Vector2(0, 0), Vector2(50, 100))
+		var result = space_state.intersect_ray(query)
 		var to_bug	
 		if bug && position.x > bug.position.x - h and position.x < bug.position.x + h:
 			to_bug = laser.global_position.y - bug.global_position.y			

@@ -48,4 +48,5 @@ func _on_area_entered(area):
 		explosion.global_position = global_position
 		explosion.emitting = true
 		get_tree().root.add_child(explosion)
-		self.queue_free()		
+		# self.queue_free()		
+pass

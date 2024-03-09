@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bl1dhmkl8ptjm"]
+[gd_scene load_steps=10 format=3 uid="uid://bl1dhmkl8ptjm"]
 
 [ext_resource type="Script" path="res://bugzap.gd" id="1_s2q5l"]
 [ext_resource type="Script" path="res://bug_player.gd" id="1_vqb0a"]
 [ext_resource type="PackedScene" uid="uid://nb8daasaeu3i" path="res://explosion.tscn" id="2_rwge8"]
+[ext_resource type="PackedScene" uid="uid://b26mblvmunn4a" path="res://bug.tscn" id="4_k6dp0"]
 [ext_resource type="Theme" uid="uid://bsyatf2qyqicf" path="res://bryans_theme.tres" id="8_12hsc"]
 [ext_resource type="Script" path="res://bug_spawner.gd" id="9_oaua2"]
 
@@ -49,6 +50,9 @@ width = 5.0
 position = Vector2(2, -311)
 shape = SubResource("RectangleShape2D_7kvm8")
 
+[node name="bug" parent="." instance=ExtResource("4_k6dp0")]
+position = Vector2(100, 100)
+
 [node name="VSplitContainer" type="VSplitContainer" parent="."]
 offset_right = 295.0
 offset_bottom = 72.0
@@ -68,8 +72,4 @@ text = "LIVES: 3
 visible = false
 script = ExtResource("9_oaua2")
 
-[node name="Timer" type="Timer" parent="bug_spawner"]
-autostart = true
-
 [connection signal="area_entered" from="player/Area2D" to="player" method="_on_area_2d_area_entered"]
-[connection signal="timeout" from="bug_spawner/Timer" to="bug_spawner" method="_on_timer_timeout"]
