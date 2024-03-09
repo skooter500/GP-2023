@@ -26,7 +26,7 @@ func _physics_process(delta):
 	f = Input.get_axis("back", "forward")
 	
 	var force = power * -transform.y * f
-	DebugDraw2D.set_text("Force", force)
+	# DebugDraw2D.set_text("Force", force)
 	if (force.length() > 0):
 		apply_central_force(force)
 		pass

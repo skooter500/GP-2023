@@ -608,6 +608,7 @@ libraries = {
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="MusicVisualizer"]
 unique_name_in_owner = true
 autoplay = true
+bus = &"MusicAnalyzer"
 
 [node name="VBox" type="VBoxContainer" parent="MusicVisualizer"]
 layout_mode = 2
@@ -623,11 +624,12 @@ size_flags_horizontal = 3
 size_flags_vertical = 4
 max_value = 1.0
 step = 0.01
-value = 1.0
+value = 0.1
 
 [node name="MuteMaster" type="CheckBox" parent="MusicVisualizer/VBox/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+button_pressed = true
 text = "Mute"
 
 [node name="AudioVisualizer" type="Node3D" parent="."]
