@@ -31,31 +31,32 @@ func make_pads():
 		add_child(pad)
 
 func button_pressed(i):
-	$AudioStreamPlayer.stream = samples[i]
-	$AudioStreamPlayer.play()
+	# $AudioStreamPlayer.stream = samples[i]
+	# $AudioStreamPlayer.play()
 	print(i)
 
 func play_sample(i):
 	
 	var p:AudioStream = samples[i]
-	$AudioStreamPlayer.stream = p
-	$AudioStreamPlayer.play()
+	# $AudioStreamPlayer.stream = p
+	# $AudioStreamPlayer.play()
 
 func make_sample_buttons():
 	for i in range(samples.size()):
 		var sample = sample_scene.instantiate()
-		var b:Button = sample.get_node("Button")
-		b.connect("mouse_entered", play_sample.bind(i))
+		var b:Sprite2D = sample.get_node("background")
+		# b.connect("mouse_entered", play_sample.bind(i))
 		
 		# var b = sample.get_node("rect")
-		var h = b.get_size().y
+		var h = b.scale.x
 		
 		var j = i % 10
 		var col = floor(i / 10.0)
 		var p = Vector2(col * 300, h * j * 1.1)
 		sample.position = p
 		
-		b.set_text(samples[i].resource_name)
+		sample.get_node("label").set_text(samples[i].resource_name)
+		sample.get_node("AudioStreamPlayer2D").stream = samples[i]
 		add_child(sample)
 		
 func load_samples():
@@ -63,10 +64,20 @@ func load_samples():
 	if dir:
 		dir.list_dir_begin()
 		var file_name = dir.get_next()
+		
+		# From https://forum.godotengine.org/t/loading-an-ogg-or-wav-file-from-res-sfx-in-gdscript/28243/2
 		while file_name != "":
 			if dir.current_is_dir():
 				print("Found directory: " + file_name)
-			elif file_name.ends_with(".wav"):				
+			if file_name.ends_with('.wav.import'):			
+				file_name = file_name.left(len(file_name) - len('.import'))
+				# var asp = AudioStreamPlayer.new()
+				# asp.set_stream(load(SOUND_DIR + '/' + filename))
+				# add_child(asp)
+				# var arr = file_name.split('/')
+				# var name = arr[arr.size()-1].split('.')[0]
+				# samples[name] = asp
+			
 				var stream = load(path_str + "/" + file_name)
 				stream.resource_name = file_name
 				samples.push_back(stream)

@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bv1vlrmjcjsna"]
+[gd_scene load_steps=4 format=3 uid="uid://bv1vlrmjcjsna"]
 
 [ext_resource type="Script" path="res://root1.gd" id="1_xgocf"]
 [ext_resource type="Script" path="res://sequencer.gd" id="2_f7sqc"]
 [ext_resource type="PackedScene" uid="uid://dnbgsshu5js6g" path="res://sample_scene.tscn" id="3_e7xm4"]
-[ext_resource type="AudioStream" uid="uid://cyh08d3o8c7y2" path="res://samples/clap-808.wav" id="4_dqllq"]
 
 [node name="root" type="Node2D"]
 script = ExtResource("1_xgocf")
@@ -13,8 +12,5 @@ position = Vector2(152, 72)
 script = ExtResource("2_f7sqc")
 pad_scene = ExtResource("3_e7xm4")
 sample_scene = ExtResource("3_e7xm4")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="sequencer"]
-stream = ExtResource("4_dqllq")
 
 [node name="drum" type="Node2D" parent="."]
