@@ -6,7 +6,7 @@ var pads:Dictionary
 
 @export var path_str = "res://samples" 
 @export var pad_scene:PackedScene
-@export var sample_scene:PackedScene
+@export var row_scene:PackedScene
 
 @export var num_pads = 8
 
@@ -41,23 +41,26 @@ func play_sample(i):
 	# $AudioStreamPlayer.stream = p
 	# $AudioStreamPlayer.play()
 
-func make_sample_buttons():
+func make_sample_buttons():	
+	var cols = 2
+	var col = 0
+	var row_node
+	var col_node
 	for i in range(samples.size()):
-		var sample = sample_scene.instantiate()
-		var b:Sprite2D = sample.get_node("background")
-		# b.connect("mouse_entered", play_sample.bind(i))
-		
-		# var b = sample.get_node("rect")
-		var h = b.scale.x
-		
-		var j = i % 10
-		var col = floor(i / 10.0)
-		var p = Vector2(col * 300, h * j * 1.1)
-		sample.position = p
-		
-		sample.get_node("label").set_text(samples[i].resource_name)
-		sample.get_node("AudioStreamPlayer2D").stream = samples[i]
-		add_child(sample)
+		if col == 0:
+			row_node = row_scene.instantiate()
+			$HScrollBar/VBoxContainer.add_child(row_node)
+			col_node = row_node.get_node("col0")
+			col = 1
+		else:
+			col_node = row_node.get_node("col1")
+			col = 0
+		col_node.set_text(samples[i].resource_name)	
+		# player.hit.connect(_on_player_hit.bind("sword", 100))
+
+		col_node.pressed.connect(play_sample.bind("i", i))
+		# sample.get_node("label").set_text(samples[i].resource_name)
+		# sample.get_node("AudioStreamPlayer2D").stream = samples[i]
 		
 func load_samples():
 	var dir = DirAccess.open(path_str)
