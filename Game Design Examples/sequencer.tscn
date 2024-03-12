@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bv1vlrmjcjsna"]
+[gd_scene load_steps=5 format=3 uid="uid://bv1vlrmjcjsna"]
 
 [ext_resource type="Script" path="res://root1.gd" id="1_xgocf"]
 [ext_resource type="Script" path="res://sequencer.gd" id="2_f7sqc"]
 [ext_resource type="PackedScene" uid="uid://dnbgsshu5js6g" path="res://sample_scene.tscn" id="3_e7xm4"]
 [ext_resource type="Theme" uid="uid://bsyatf2qyqicf" path="res://bryans_theme.tres" id="4_yc7u6"]
-[ext_resource type="PackedScene" uid="uid://5isoqs3sjupu" path="res://row.tscn" id="5_s084q"]
 
 [node name="root" type="Node2D"]
 script = ExtResource("1_xgocf")
@@ -13,31 +12,24 @@ script = ExtResource("1_xgocf")
 position = Vector2(152, 72)
 script = ExtResource("2_f7sqc")
 pad_scene = ExtResource("3_e7xm4")
-row_scene = ExtResource("5_s084q")
 
 [node name="HScrollBar" type="HScrollBar" parent="sequencer"]
 offset_right = 335.0
 offset_bottom = 236.0
 theme = ExtResource("4_yc7u6")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="sequencer/HScrollBar"]
+[node name="GridContainer" type="GridContainer" parent="sequencer/HScrollBar"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+columns = 2
 
-[node name="row" parent="sequencer/HScrollBar/VBoxContainer" instance=ExtResource("5_s084q")]
+[node name="Button" type="Button" parent="sequencer/HScrollBar/GridContainer"]
 layout_mode = 2
+text = "nnn"
 
-[node name="col0" parent="sequencer/HScrollBar/VBoxContainer/row" index="0"]
-text = "BRYAN DUGGAN	"
-
-[node name="row2" parent="sequencer/HScrollBar/VBoxContainer" instance=ExtResource("5_s084q")]
+[node name="Button2" type="Button" parent="sequencer/HScrollBar/GridContainer"]
 layout_mode = 2
-
-[node name="col1" parent="sequencer/HScrollBar/VBoxContainer/row2" index="1"]
-text = "SKOOTER500"
+text = "jhjhjh"
 
 [node name="drum" type="Node2D" parent="."]
-
-[editable path="sequencer/HScrollBar/VBoxContainer/row"]
-[editable path="sequencer/HScrollBar/VBoxContainer/row2"]

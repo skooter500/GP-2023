@@ -7,7 +7,7 @@ var pads:Dictionary
 
 @export var path_str = "res://samples" 
 @export var pad_scene:PackedScene
-@export var row_scene:PackedScene
+@export var note_scene:PackedScene
 
 @export var num_pads = 8
 
@@ -55,22 +55,10 @@ func play_sample(i):
 	asp_index = (asp_index + 1) % players.size()
 
 func make_sample_buttons():	
-	var cols = 2
-	var col = 0
-	var row_node
-	var col_node
 	for i in range(samples.size()):
-		if col == 0:
-			row_node = row_scene.instantiate()
-			$HScrollBar/VBoxContainer.add_child(row_node)
-			col_node = row_node.get_node("col0")
-			col = 1
-		else:
-			col_node = row_node.get_node("col1")
-			col = 0
-		col_node.set_text(samples[i].resource_name)	
+		var col_node = note_scene.instantiate()
 		# player.hit.connect(_on_player_hit.bind("sword", 100))
-
+		col_node.text = samples[i].resource_name
 		col_node.pressed.connect(play_sample.bind(i))
 		# sample.get_node("label").set_text(samples[i].resource_name)
 		# sample.get_node("AudioStreamPlayer2D").stream = samples[i]
