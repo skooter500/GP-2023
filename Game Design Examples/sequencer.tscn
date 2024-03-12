@@ -16,8 +16,8 @@ pad_scene = ExtResource("3_e7xm4")
 row_scene = ExtResource("5_s084q")
 
 [node name="HScrollBar" type="HScrollBar" parent="sequencer"]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_right = 335.0
+offset_bottom = 236.0
 theme = ExtResource("4_yc7u6")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="sequencer/HScrollBar"]
@@ -28,6 +28,16 @@ offset_bottom = 40.0
 [node name="row" parent="sequencer/HScrollBar/VBoxContainer" instance=ExtResource("5_s084q")]
 layout_mode = 2
 
+[node name="col0" parent="sequencer/HScrollBar/VBoxContainer/row" index="0"]
+text = "BRYAN DUGGAN	"
+
+[node name="row2" parent="sequencer/HScrollBar/VBoxContainer" instance=ExtResource("5_s084q")]
+layout_mode = 2
+
+[node name="col1" parent="sequencer/HScrollBar/VBoxContainer/row2" index="1"]
+text = "SKOOTER500"
+
 [node name="drum" type="Node2D" parent="."]
 
 [editable path="sequencer/HScrollBar/VBoxContainer/row"]
+[editable path="sequencer/HScrollBar/VBoxContainer/row2"]

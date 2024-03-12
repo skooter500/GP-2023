@@ -2,6 +2,7 @@
 extends Node
 
 var samples:Array
+var players:Array
 var pads:Dictionary
 
 @export var path_str = "res://samples" 
@@ -10,12 +11,19 @@ var pads:Dictionary
 
 @export var num_pads = 8
 
+var num_players = 10
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# Set the path to the folder containing the WAV fes
 	# make_pads()
 	load_samples()
 	make_sample_buttons()
+	
+	for i in range(num_players):
+		var asp = AudioStreamPlayer.new()
+		add_child(asp)
+		players.push_back(asp)
 
 func make_pads():
 	var w
@@ -35,11 +43,16 @@ func button_pressed(i):
 	# $AudioStreamPlayer.play()
 	print(i)
 
+
+var asp_index = 0
+
 func play_sample(i):
-	
+	print("play sample:" + str(i))
 	var p:AudioStream = samples[i]
-	# $AudioStreamPlayer.stream = p
-	# $AudioStreamPlayer.play()
+	var asp = players[asp_index]
+	asp.stream = p
+	asp.play()
+	asp_index = (asp_index + 1) % players.size()
 
 func make_sample_buttons():	
 	var cols = 2
@@ -58,7 +71,7 @@ func make_sample_buttons():
 		col_node.set_text(samples[i].resource_name)	
 		# player.hit.connect(_on_player_hit.bind("sword", 100))
 
-		col_node.pressed.connect(play_sample.bind("i", i))
+		col_node.pressed.connect(play_sample.bind(i))
 		# sample.get_node("label").set_text(samples[i].resource_name)
 		# sample.get_node("AudioStreamPlayer2D").stream = samples[i]
 		
