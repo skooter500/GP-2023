@@ -60,7 +60,8 @@ func make_sample_buttons():
 		# player.hit.connect(_on_player_hit.bind("sword", 100))
 		col_node.text = samples[i].resource_name
 		col_node.pressed.connect(play_sample.bind(i))
-		$GridContainer.add_child(col_node)
+		$"../CanvasLayer/ScrollContainer/PanelContainer/GridContainer".add_child(col_node)
+
 func load_samples():
 	var dir = DirAccess.open(path_str)
 	if dir:

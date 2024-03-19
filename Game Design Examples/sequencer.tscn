@@ -15,50 +15,56 @@ script = ExtResource("2_f7sqc")
 pad_scene = ExtResource("3_e7xm4")
 note_scene = ExtResource("4_i4a6q")
 
-[node name="GridContainer" type="GridContainer" parent="sequencer"]
-offset_right = 711.0
-offset_bottom = 430.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/ScrollContainer/PanelContainer"]
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("4_yc7u6")
 columns = 2
 script = ExtResource("6_rcy7s")
 
-[node name="Button" parent="sequencer/GridContainer" instance=ExtResource("4_i4a6q")]
+[node name="Button" parent="CanvasLayer/ScrollContainer/PanelContainer/GridContainer" instance=ExtResource("4_i4a6q")]
 layout_mode = 2
+size_flags_horizontal = 3
 
-[node name="Button2" type="Button" parent="sequencer/GridContainer"]
+[node name="Button2" type="Button" parent="CanvasLayer/ScrollContainer/PanelContainer/GridContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
 text = "jhjhjhms\\jdbcmashdbc"
 
-[node name="Button3" parent="sequencer/GridContainer" instance=ExtResource("4_i4a6q")]
+[node name="Button3" parent="CanvasLayer/ScrollContainer/PanelContainer/GridContainer" instance=ExtResource("4_i4a6q")]
 layout_mode = 2
 
-[node name="Button4" type="Button" parent="sequencer/GridContainer"]
+[node name="Button4" type="Button" parent="CanvasLayer/ScrollContainer/PanelContainer/GridContainer"]
 layout_mode = 2
 text = "jhjhjh"
 
-[node name="Button5" parent="sequencer/GridContainer" instance=ExtResource("4_i4a6q")]
+[node name="Button5" parent="CanvasLayer/ScrollContainer/PanelContainer/GridContainer" instance=ExtResource("4_i4a6q")]
 layout_mode = 2
 text = "nnndsfsd"
 
-[node name="Button6" type="Button" parent="sequencer/GridContainer"]
+[node name="Button6" type="Button" parent="CanvasLayer/ScrollContainer/PanelContainer/GridContainer"]
 layout_mode = 2
 text = "jhjhjh"
 
-[node name="Button7" parent="sequencer/GridContainer" instance=ExtResource("4_i4a6q")]
+[node name="Button7" parent="CanvasLayer/ScrollContainer/PanelContainer/GridContainer" instance=ExtResource("4_i4a6q")]
 layout_mode = 2
 
-[node name="Button8" type="Button" parent="sequencer/GridContainer"]
+[node name="Button8" type="Button" parent="CanvasLayer/ScrollContainer/PanelContainer/GridContainer"]
 layout_mode = 2
 text = "jhjhjh"
-
-[node name="drum" type="Node2D" parent="."]
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
-offset_right = 711.0
-offset_bottom = 430.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
