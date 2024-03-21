@@ -47,6 +47,7 @@ func button_pressed(i):
 var asp_index = 0
 
 func play_sample(i):
+	
 	print("play sample:" + str(i))
 	var p:AudioStream = samples[i]
 	var asp = players[asp_index]
