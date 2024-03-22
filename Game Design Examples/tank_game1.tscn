@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b5wjlkgu6rd4m"]
+[gd_scene load_steps=12 format=3 uid="uid://dum0vq7fy15st"]
 
 [ext_resource type="Script" path="res://root1.gd" id="1_027t5"]
 [ext_resource type="FontFile" uid="uid://0jk2p2kfmllu" path="res://fonts/Hyperspace Bold.otf" id="2_601f3"]
@@ -8,7 +8,7 @@
 [ext_resource type="Script" path="res://jet_sound.gd" id="6_6rfpp"]
 [ext_resource type="Script" path="res://spawner.gd" id="7_jndn7"]
 [ext_resource type="PackedScene" uid="uid://bwi6lmhwtpkeh" path="res://block.tscn" id="8_jabo1"]
-[ext_resource type="Theme" uid="uid://bsyatf2qyqicf" path="res://bryans_theme.tres" id="9_uakw0"]
+[ext_resource type="Theme" uid="uid://dyroetfulq0o6" path="res://bryans_theme.tres" id="9_uakw0"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_m7bvt"]
 

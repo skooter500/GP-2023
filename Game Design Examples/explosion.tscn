@@ -37,6 +37,7 @@ emitting = false
 amount = 50
 process_material = SubResource("ParticleProcessMaterial_8i2hp")
 lifetime = 0.5
+one_shot = true
 explosiveness = 1.0
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
