@@ -1,14 +1,13 @@
 [gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://d0tiv0n6oek2y"]
 
-[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_7pnx3"]
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_jagyb"]
 resource_name = "Reverb"
-room_size = 1.0
 
-[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_0ke7i"]
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_7bspv"]
 resource_name = "PitchShift"
 
 [resource]
-bus/0/effect/0/effect = SubResource("AudioEffectReverb_7pnx3")
+bus/0/effect/0/effect = SubResource("AudioEffectReverb_jagyb")
 bus/0/effect/0/enabled = true
-bus/0/effect/1/effect = SubResource("AudioEffectPitchShift_0ke7i")
+bus/0/effect/1/effect = SubResource("AudioEffectPitchShift_7bspv")
 bus/0/effect/1/enabled = true
