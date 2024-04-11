@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bod8ykoo6wnv2"
-path="res://.godot/imported/perc-tribal.wav-4d9c444597b590477680b985eb34e203.sample"
+path="res://.godot/imported/perc-tribal.wav-faef8e1fd608d65491496d87daaac197.sample"
 
 [deps]
 
-source_file="res://Samples/perc-tribal.wav"
-dest_files=["res://.godot/imported/perc-tribal.wav-4d9c444597b590477680b985eb34e203.sample"]
+source_file="res://samples/perc-tribal.wav"
+dest_files=["res://.godot/imported/perc-tribal.wav-faef8e1fd608d65491496d87daaac197.sample"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cvh7yegspi6lg"
-path="res://.godot/imported/perc-nasty.wav-7d6d420016a8377279db960fbfcc09e7.sample"
+path="res://.godot/imported/perc-nasty.wav-50c9efcd1adb911b7f9855bf3b44c00b.sample"
 
 [deps]
 
-source_file="res://Samples/perc-nasty.wav"
-dest_files=["res://.godot/imported/perc-nasty.wav-7d6d420016a8377279db960fbfcc09e7.sample"]
+source_file="res://samples/perc-nasty.wav"
+dest_files=["res://.godot/imported/perc-nasty.wav-50c9efcd1adb911b7f9855bf3b44c00b.sample"]
 
 [params]
 

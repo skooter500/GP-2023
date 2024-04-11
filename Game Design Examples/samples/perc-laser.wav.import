@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://m726pk8v774g"
-path="res://.godot/imported/perc-laser.wav-136083cd68ed130978db65466a0d29f5.sample"
+path="res://.godot/imported/perc-laser.wav-6aeb9940a2afd83b6a4f802c9414b8e0.sample"
 
 [deps]
 
-source_file="res://Samples/perc-laser.wav"
-dest_files=["res://.godot/imported/perc-laser.wav-136083cd68ed130978db65466a0d29f5.sample"]
+source_file="res://samples/perc-laser.wav"
+dest_files=["res://.godot/imported/perc-laser.wav-6aeb9940a2afd83b6a4f802c9414b8e0.sample"]
 
 [params]
 

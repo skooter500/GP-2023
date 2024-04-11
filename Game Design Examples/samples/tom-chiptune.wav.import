@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bfg0nfs5m0dby"
-path="res://.godot/imported/tom-chiptune.wav-fb5179e9d5db9b388c2ac59fc489cd5c.sample"
+path="res://.godot/imported/tom-chiptune.wav-3c04266eb12a7f1a38e319975630add1.sample"
 
 [deps]
 
-source_file="res://Samples/tom-chiptune.wav"
-dest_files=["res://.godot/imported/tom-chiptune.wav-fb5179e9d5db9b388c2ac59fc489cd5c.sample"]
+source_file="res://samples/tom-chiptune.wav"
+dest_files=["res://.godot/imported/tom-chiptune.wav-3c04266eb12a7f1a38e319975630add1.sample"]
 
 [params]
 

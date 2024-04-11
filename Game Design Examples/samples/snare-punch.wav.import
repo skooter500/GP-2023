@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://d0ubxn6b3o5bl"
-path="res://.godot/imported/snare-punch.wav-cac7891b7c4413eb42cce886e67066ac.sample"
+path="res://.godot/imported/snare-punch.wav-d3968171d8bca9b13918701389a4049c.sample"
 
 [deps]
 
-source_file="res://Samples/snare-punch.wav"
-dest_files=["res://.godot/imported/snare-punch.wav-cac7891b7c4413eb42cce886e67066ac.sample"]
+source_file="res://samples/snare-punch.wav"
+dest_files=["res://.godot/imported/snare-punch.wav-d3968171d8bca9b13918701389a4049c.sample"]
 
 [params]
 

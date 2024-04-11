@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://gdrkfa2ttquk"
-path="res://.godot/imported/crash-noise.wav-40b3a36248ae6fedb722ea4fbb81c446.sample"
+path="res://.godot/imported/crash-noise.wav-53b2651f7afc324558f30d015c050f58.sample"
 
 [deps]
 
-source_file="res://Samples/crash-noise.wav"
-dest_files=["res://.godot/imported/crash-noise.wav-40b3a36248ae6fedb722ea4fbb81c446.sample"]
+source_file="res://samples/crash-noise.wav"
+dest_files=["res://.godot/imported/crash-noise.wav-53b2651f7afc324558f30d015c050f58.sample"]
 
 [params]
 

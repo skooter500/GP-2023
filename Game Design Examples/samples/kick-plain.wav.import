@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://d0ly4wrrfji3l"
-path="res://.godot/imported/kick-plain.wav-61a173f12313da239f2f5ffb796ba37e.sample"
+path="res://.godot/imported/kick-plain.wav-7f8d6dde90638ad2881b7a034af0615b.sample"
 
 [deps]
 
-source_file="res://Samples/kick-plain.wav"
-dest_files=["res://.godot/imported/kick-plain.wav-61a173f12313da239f2f5ffb796ba37e.sample"]
+source_file="res://samples/kick-plain.wav"
+dest_files=["res://.godot/imported/kick-plain.wav-7f8d6dde90638ad2881b7a034af0615b.sample"]
 
 [params]
 

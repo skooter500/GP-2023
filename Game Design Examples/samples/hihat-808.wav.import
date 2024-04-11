@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bk3job2cplmnq"
-path="res://.godot/imported/hihat-808.wav-69ec94bbb9d63f93c14e3c4b999ed9d3.sample"
+path="res://.godot/imported/hihat-808.wav-7d7afaab94e3ce36b78db18a84983f4c.sample"
 
 [deps]
 
-source_file="res://Samples/hihat-808.wav"
-dest_files=["res://.godot/imported/hihat-808.wav-69ec94bbb9d63f93c14e3c4b999ed9d3.sample"]
+source_file="res://samples/hihat-808.wav"
+dest_files=["res://.godot/imported/hihat-808.wav-7d7afaab94e3ce36b78db18a84983f4c.sample"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ck7u1fsdollfq"
-path="res://.godot/imported/hihat-analog.wav-a975ea7c6760fd36f8bad3f0d1947b5e.sample"
+path="res://.godot/imported/hihat-analog.wav-e29edac22ad211144cebd7e5638bab84.sample"
 
 [deps]
 
-source_file="res://Samples/hihat-analog.wav"
-dest_files=["res://.godot/imported/hihat-analog.wav-a975ea7c6760fd36f8bad3f0d1947b5e.sample"]
+source_file="res://samples/hihat-analog.wav"
+dest_files=["res://.godot/imported/hihat-analog.wav-e29edac22ad211144cebd7e5638bab84.sample"]
 
 [params]
 

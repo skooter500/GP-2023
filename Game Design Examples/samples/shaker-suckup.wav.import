@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c26vu35ooad7u"
-path="res://.godot/imported/shaker-suckup.wav-7e91cc644b7587e2d7fbeb6a019e0fa3.sample"
+path="res://.godot/imported/shaker-suckup.wav-da54fcf88e8dbc9747c174e6efd64efd.sample"
 
 [deps]
 
-source_file="res://Samples/shaker-suckup.wav"
-dest_files=["res://.godot/imported/shaker-suckup.wav-7e91cc644b7587e2d7fbeb6a019e0fa3.sample"]
+source_file="res://samples/shaker-suckup.wav"
+dest_files=["res://.godot/imported/shaker-suckup.wav-da54fcf88e8dbc9747c174e6efd64efd.sample"]
 
 [params]
 
