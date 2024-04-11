@@ -1,0 +1,390 @@
+[gd_scene format=3 uid="uid://brg1655igllul"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="E" type="Node2D" parent="Control"]
+position = Vector2(-7, 451)
+scale = Vector2(1, 0.56)
+
+[node name="Shift1" type="Button" parent="Control/E"]
+offset_left = 25.0
+offset_top = 119.0
+offset_right = 80.0
+offset_bottom = 265.0
+text = "Shift"
+
+[node name="Button2" type="Button" parent="Control/E"]
+offset_left = 89.0
+offset_top = 119.0
+offset_right = 144.0
+offset_bottom = 265.0
+text = "|\\"
+
+[node name="Button3" type="Button" parent="Control/E"]
+offset_left = 156.0
+offset_top = 119.0
+offset_right = 211.0
+offset_bottom = 265.0
+text = "Z"
+
+[node name="Button4" type="Button" parent="Control/E"]
+offset_left = 224.0
+offset_top = 118.0
+offset_right = 279.0
+offset_bottom = 264.0
+text = "X"
+
+[node name="Button5" type="Button" parent="Control/E"]
+offset_left = 288.0
+offset_top = 118.0
+offset_right = 343.0
+offset_bottom = 264.0
+text = "C"
+
+[node name="Button6" type="Button" parent="Control/E"]
+offset_left = 355.0
+offset_top = 118.0
+offset_right = 410.0
+offset_bottom = 264.0
+text = "V"
+
+[node name="Button7" type="Button" parent="Control/E"]
+offset_left = 423.0
+offset_top = 118.0
+offset_right = 478.0
+offset_bottom = 264.0
+text = "B"
+
+[node name="Button8" type="Button" parent="Control/E"]
+offset_left = 487.0
+offset_top = 118.0
+offset_right = 542.0
+offset_bottom = 264.0
+text = "N"
+
+[node name="Button9" type="Button" parent="Control/E"]
+offset_left = 554.0
+offset_top = 118.0
+offset_right = 609.0
+offset_bottom = 264.0
+text = "M"
+
+[node name="Button10" type="Button" parent="Control/E"]
+offset_left = 622.0
+offset_top = 117.0
+offset_right = 677.0
+offset_bottom = 263.0
+text = "<,"
+
+[node name="Button11" type="Button" parent="Control/E"]
+offset_left = 686.0
+offset_top = 117.0
+offset_right = 741.0
+offset_bottom = 263.0
+text = ">."
+
+[node name="Button12" type="Button" parent="Control/E"]
+offset_left = 753.0
+offset_top = 117.0
+offset_right = 808.0
+offset_bottom = 263.0
+text = "?/"
+
+[node name="Button13" type="Button" parent="Control/E"]
+offset_left = 822.0
+offset_top = 117.0
+offset_right = 877.0
+offset_bottom = 263.0
+text = "Shift
+"
+
+[node name="A" type="Node2D" parent="Control"]
+position = Vector2(-7, 355)
+scale = Vector2(1, 0.56)
+
+[node name="Button" type="Button" parent="Control/A"]
+offset_left = 25.0
+offset_top = 119.0
+offset_right = 80.0
+offset_bottom = 265.0
+text = "Caps"
+
+[node name="Button2" type="Button" parent="Control/A"]
+offset_left = 89.0
+offset_top = 119.0
+offset_right = 144.0
+offset_bottom = 265.0
+text = "A"
+
+[node name="Button3" type="Button" parent="Control/A"]
+offset_left = 156.0
+offset_top = 119.0
+offset_right = 211.0
+offset_bottom = 265.0
+text = "S"
+
+[node name="Button4" type="Button" parent="Control/A"]
+offset_left = 224.0
+offset_top = 118.0
+offset_right = 279.0
+offset_bottom = 264.0
+text = "D"
+
+[node name="Button5" type="Button" parent="Control/A"]
+offset_left = 288.0
+offset_top = 118.0
+offset_right = 343.0
+offset_bottom = 264.0
+text = "F"
+
+[node name="Button6" type="Button" parent="Control/A"]
+offset_left = 355.0
+offset_top = 118.0
+offset_right = 410.0
+offset_bottom = 264.0
+text = "G"
+
+[node name="Button7" type="Button" parent="Control/A"]
+offset_left = 423.0
+offset_top = 118.0
+offset_right = 478.0
+offset_bottom = 264.0
+text = "H"
+
+[node name="Button8" type="Button" parent="Control/A"]
+offset_left = 487.0
+offset_top = 118.0
+offset_right = 542.0
+offset_bottom = 264.0
+text = "J"
+
+[node name="Button9" type="Button" parent="Control/A"]
+offset_left = 554.0
+offset_top = 118.0
+offset_right = 609.0
+offset_bottom = 264.0
+text = "K"
+
+[node name="Button10" type="Button" parent="Control/A"]
+offset_left = 622.0
+offset_top = 117.0
+offset_right = 677.0
+offset_bottom = 263.0
+text = "L"
+
+[node name="Button11" type="Button" parent="Control/A"]
+offset_left = 686.0
+offset_top = 117.0
+offset_right = 741.0
+offset_bottom = 263.0
+text = ":;"
+
+[node name="Button12" type="Button" parent="Control/A"]
+offset_left = 753.0
+offset_top = 117.0
+offset_right = 808.0
+offset_bottom = 263.0
+text = "@'"
+
+[node name="Button13" type="Button" parent="Control/A"]
+offset_left = 822.0
+offset_top = 117.0
+offset_right = 877.0
+offset_bottom = 263.0
+text = "Enter"
+
+[node name="D" type="Node2D" parent="Control"]
+position = Vector2(-7, 261)
+scale = Vector2(1, 0.56)
+
+[node name="Button" type="Button" parent="Control/D"]
+offset_left = 25.0
+offset_top = 119.0
+offset_right = 80.0
+offset_bottom = 265.0
+text = "Q"
+
+[node name="Button2" type="Button" parent="Control/D"]
+offset_left = 89.0
+offset_top = 119.0
+offset_right = 144.0
+offset_bottom = 265.0
+text = "W"
+
+[node name="Button3" type="Button" parent="Control/D"]
+offset_left = 156.0
+offset_top = 119.0
+offset_right = 211.0
+offset_bottom = 265.0
+text = "E"
+
+[node name="Button4" type="Button" parent="Control/D"]
+offset_left = 224.0
+offset_top = 118.0
+offset_right = 279.0
+offset_bottom = 264.0
+text = "R"
+
+[node name="Button5" type="Button" parent="Control/D"]
+offset_left = 288.0
+offset_top = 118.0
+offset_right = 343.0
+offset_bottom = 264.0
+text = "T"
+
+[node name="Button6" type="Button" parent="Control/D"]
+offset_left = 355.0
+offset_top = 118.0
+offset_right = 410.0
+offset_bottom = 264.0
+text = "Y"
+
+[node name="Button7" type="Button" parent="Control/D"]
+offset_left = 423.0
+offset_top = 118.0
+offset_right = 478.0
+offset_bottom = 264.0
+text = "U"
+
+[node name="Button8" type="Button" parent="Control/D"]
+offset_left = 487.0
+offset_top = 118.0
+offset_right = 542.0
+offset_bottom = 264.0
+text = "I"
+
+[node name="Button9" type="Button" parent="Control/D"]
+offset_left = 554.0
+offset_top = 118.0
+offset_right = 609.0
+offset_bottom = 264.0
+text = "O"
+
+[node name="Button10" type="Button" parent="Control/D"]
+offset_left = 622.0
+offset_top = 117.0
+offset_right = 677.0
+offset_bottom = 263.0
+text = "P"
+
+[node name="Button11" type="Button" parent="Control/D"]
+offset_left = 686.0
+offset_top = 117.0
+offset_right = 741.0
+offset_bottom = 263.0
+text = "{["
+
+[node name="Button12" type="Button" parent="Control/D"]
+offset_left = 753.0
+offset_top = 117.0
+offset_right = 808.0
+offset_bottom = 263.0
+text = "}]"
+
+[node name="Button13" type="Button" parent="Control/D"]
+offset_left = 822.0
+offset_top = 117.0
+offset_right = 877.0
+offset_bottom = 263.0
+text = "~#"
+
+[node name="G" type="Node2D" parent="Control"]
+position = Vector2(-7, 165)
+scale = Vector2(1, 0.56)
+
+[node name="Button" type="Button" parent="Control/G"]
+offset_left = 25.0
+offset_top = 119.0
+offset_right = 80.0
+offset_bottom = 265.0
+text = "`¬"
+
+[node name="Button2" type="Button" parent="Control/G"]
+offset_left = 89.0
+offset_top = 119.0
+offset_right = 144.0
+offset_bottom = 265.0
+text = "1"
+
+[node name="Button3" type="Button" parent="Control/G"]
+offset_left = 156.0
+offset_top = 119.0
+offset_right = 211.0
+offset_bottom = 265.0
+text = "2"
+
+[node name="Button4" type="Button" parent="Control/G"]
+offset_left = 224.0
+offset_top = 118.0
+offset_right = 279.0
+offset_bottom = 264.0
+text = "3"
+
+[node name="Button5" type="Button" parent="Control/G"]
+offset_left = 288.0
+offset_top = 118.0
+offset_right = 343.0
+offset_bottom = 264.0
+text = "4"
+
+[node name="Button6" type="Button" parent="Control/G"]
+offset_left = 355.0
+offset_top = 118.0
+offset_right = 410.0
+offset_bottom = 264.0
+text = "5"
+
+[node name="Button7" type="Button" parent="Control/G"]
+offset_left = 423.0
+offset_top = 118.0
+offset_right = 478.0
+offset_bottom = 264.0
+text = "6"
+
+[node name="Button8" type="Button" parent="Control/G"]
+offset_left = 487.0
+offset_top = 118.0
+offset_right = 542.0
+offset_bottom = 264.0
+text = "7"
+
+[node name="Button9" type="Button" parent="Control/G"]
+offset_left = 554.0
+offset_top = 118.0
+offset_right = 609.0
+offset_bottom = 264.0
+text = "8"
+
+[node name="Button10" type="Button" parent="Control/G"]
+offset_left = 622.0
+offset_top = 117.0
+offset_right = 677.0
+offset_bottom = 263.0
+text = "9"
+
+[node name="Button11" type="Button" parent="Control/G"]
+offset_left = 686.0
+offset_top = 117.0
+offset_right = 741.0
+offset_bottom = 263.0
+text = "0"
+
+[node name="Button12" type="Button" parent="Control/G"]
+offset_left = 753.0
+offset_top = 117.0
+offset_right = 808.0
+offset_bottom = 263.0
+text = "_-"
+
+[node name="Button13" type="Button" parent="Control/G"]
+offset_left = 822.0
+offset_top = 117.0
+offset_right = 877.0
+offset_bottom = 263.0
+text = "+="
