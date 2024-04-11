@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dha2gpk61qvnl"
-path="res://.godot/imported/perc-metal.wav-bf8c631f5d402a833a2805cb68e300f2.sample"
+path="res://.godot/imported/perc-metal.wav-315da5899f16c6afb7621873e74dea5e.sample"
 
 [deps]
 
-source_file="res://Samples/perc-metal.wav"
-dest_files=["res://.godot/imported/perc-metal.wav-bf8c631f5d402a833a2805cb68e300f2.sample"]
+source_file="res://samples/perc-metal.wav"
+dest_files=["res://.godot/imported/perc-metal.wav-315da5899f16c6afb7621873e74dea5e.sample"]
 
 [params]
 

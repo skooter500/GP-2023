@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c5211pesawm38"
-path="res://.godot/imported/ride-acoustic01.wav-567cb8c1d6ed74055f02479991080e6e.sample"
+path="res://.godot/imported/ride-acoustic01.wav-85238f9a4b36d02dd4a019756f509bb0.sample"
 
 [deps]
 
-source_file="res://Samples/ride-acoustic01.wav"
-dest_files=["res://.godot/imported/ride-acoustic01.wav-567cb8c1d6ed74055f02479991080e6e.sample"]
+source_file="res://samples/ride-acoustic01.wav"
+dest_files=["res://.godot/imported/ride-acoustic01.wav-85238f9a4b36d02dd4a019756f509bb0.sample"]
 
 [params]
 

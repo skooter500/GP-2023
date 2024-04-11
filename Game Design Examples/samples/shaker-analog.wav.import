@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bk1ssksqsd5wx"
-path="res://.godot/imported/shaker-analog.wav-f2fcf49b1ab411884a7b615312cbc7b2.sample"
+path="res://.godot/imported/shaker-analog.wav-6a603006ee1dbee190b9ec633774f92c.sample"
 
 [deps]
 
-source_file="res://Samples/shaker-analog.wav"
-dest_files=["res://.godot/imported/shaker-analog.wav-f2fcf49b1ab411884a7b615312cbc7b2.sample"]
+source_file="res://samples/shaker-analog.wav"
+dest_files=["res://.godot/imported/shaker-analog.wav-6a603006ee1dbee190b9ec633774f92c.sample"]
 
 [params]
 

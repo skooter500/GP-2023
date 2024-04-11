@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c4nyql772k0ug"
-path="res://.godot/imported/perc-808.wav-9ed3c61171e13fe4c08f060c2e5eb40d.sample"
+path="res://.godot/imported/perc-808.wav-f203bff39267456af17b033cad41703a.sample"
 
 [deps]
 
-source_file="res://Samples/perc-808.wav"
-dest_files=["res://.godot/imported/perc-808.wav-9ed3c61171e13fe4c08f060c2e5eb40d.sample"]
+source_file="res://samples/perc-808.wav"
+dest_files=["res://.godot/imported/perc-808.wav-f203bff39267456af17b033cad41703a.sample"]
 
 [params]
 

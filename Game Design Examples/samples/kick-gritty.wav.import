@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cuc6pk8j1cmra"
-path="res://.godot/imported/kick-gritty.wav-d3dbd3f63462cf38b51d1fef30ef5da6.sample"
+path="res://.godot/imported/kick-gritty.wav-22effafd8ae1c53c640622b598c76004.sample"
 
 [deps]
 
-source_file="res://Samples/kick-gritty.wav"
-dest_files=["res://.godot/imported/kick-gritty.wav-d3dbd3f63462cf38b51d1fef30ef5da6.sample"]
+source_file="res://samples/kick-gritty.wav"
+dest_files=["res://.godot/imported/kick-gritty.wav-22effafd8ae1c53c640622b598c76004.sample"]
 
 [params]
 

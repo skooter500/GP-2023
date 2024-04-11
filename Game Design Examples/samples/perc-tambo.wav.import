@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://duphq6tqd36jg"
-path="res://.godot/imported/perc-tambo.wav-da960a7333d1bcee5058b577fa5316e6.sample"
+path="res://.godot/imported/perc-tambo.wav-169af80c58a51dcb3394c6de442abe46.sample"
 
 [deps]
 
-source_file="res://Samples/perc-tambo.wav"
-dest_files=["res://.godot/imported/perc-tambo.wav-da960a7333d1bcee5058b577fa5316e6.sample"]
+source_file="res://samples/perc-tambo.wav"
+dest_files=["res://.godot/imported/perc-tambo.wav-169af80c58a51dcb3394c6de442abe46.sample"]
 
 [params]
 

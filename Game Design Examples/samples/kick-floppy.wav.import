@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b52a8h7kg03kp"
-path="res://.godot/imported/kick-floppy.wav-7b0b70783fa399c2dec581bc2dcc0693.sample"
+path="res://.godot/imported/kick-floppy.wav-92e995680b2b8fc4a5f51e632f657e2b.sample"
 
 [deps]
 
-source_file="res://Samples/kick-floppy.wav"
-dest_files=["res://.godot/imported/kick-floppy.wav-7b0b70783fa399c2dec581bc2dcc0693.sample"]
+source_file="res://samples/kick-floppy.wav"
+dest_files=["res://.godot/imported/kick-floppy.wav-92e995680b2b8fc4a5f51e632f657e2b.sample"]
 
 [params]
 

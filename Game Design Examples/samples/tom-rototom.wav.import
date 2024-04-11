@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cxgvd0tqulv2j"
-path="res://.godot/imported/tom-rototom.wav-664eda794425b6b22768b5dbf08dbcf8.sample"
+path="res://.godot/imported/tom-rototom.wav-7e019d59510e6d08ff7c730bd57c9af2.sample"
 
 [deps]
 
-source_file="res://Samples/tom-rototom.wav"
-dest_files=["res://.godot/imported/tom-rototom.wav-664eda794425b6b22768b5dbf08dbcf8.sample"]
+source_file="res://samples/tom-rototom.wav"
+dest_files=["res://.godot/imported/tom-rototom.wav-7e019d59510e6d08ff7c730bd57c9af2.sample"]
 
 [params]
 

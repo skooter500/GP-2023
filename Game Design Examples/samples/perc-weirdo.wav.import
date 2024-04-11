@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://crhcd5t2l6xgi"
-path="res://.godot/imported/perc-weirdo.wav-93e2ea3b9b37f6961a6085e71e28fcbe.sample"
+path="res://.godot/imported/perc-weirdo.wav-7c6d19872c98290109bebe6b5ef272d5.sample"
 
 [deps]
 
-source_file="res://Samples/perc-weirdo.wav"
-dest_files=["res://.godot/imported/perc-weirdo.wav-93e2ea3b9b37f6961a6085e71e28fcbe.sample"]
+source_file="res://samples/perc-weirdo.wav"
+dest_files=["res://.godot/imported/perc-weirdo.wav-7c6d19872c98290109bebe6b5ef272d5.sample"]
 
 [params]
 

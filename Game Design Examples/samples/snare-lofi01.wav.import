@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://djpjwg4xbgsyi"
-path="res://.godot/imported/snare-lofi01.wav-b083b3629a388156f2a8405f8fca3145.sample"
+path="res://.godot/imported/snare-lofi01.wav-8ea4cd81d83f3fe7129bac0ec1f2fade.sample"
 
 [deps]
 
-source_file="res://Samples/snare-lofi01.wav"
-dest_files=["res://.godot/imported/snare-lofi01.wav-b083b3629a388156f2a8405f8fca3145.sample"]
+source_file="res://samples/snare-lofi01.wav"
+dest_files=["res://.godot/imported/snare-lofi01.wav-8ea4cd81d83f3fe7129bac0ec1f2fade.sample"]
 
 [params]
 

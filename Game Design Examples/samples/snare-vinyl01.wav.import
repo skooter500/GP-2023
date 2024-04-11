@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://crgrpnbdr0k2t"
-path="res://.godot/imported/snare-vinyl01.wav-8adc037fb0412cf308f88f0fafe37a04.sample"
+path="res://.godot/imported/snare-vinyl01.wav-a39b1f96082e7b07d2029b97f153e5f7.sample"
 
 [deps]
 
-source_file="res://Samples/snare-vinyl01.wav"
-dest_files=["res://.godot/imported/snare-vinyl01.wav-8adc037fb0412cf308f88f0fafe37a04.sample"]
+source_file="res://samples/snare-vinyl01.wav"
+dest_files=["res://.godot/imported/snare-vinyl01.wav-a39b1f96082e7b07d2029b97f153e5f7.sample"]
 
 [params]
 

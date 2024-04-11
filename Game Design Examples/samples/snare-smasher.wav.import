@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://pkdmpx1geym"
-path="res://.godot/imported/snare-smasher.wav-0017ebbd32b07057b766e7e5c4075118.sample"
+path="res://.godot/imported/snare-smasher.wav-d3fb9a014a8dc2f621bdaa7042e11e14.sample"
 
 [deps]
 
-source_file="res://Samples/snare-smasher.wav"
-dest_files=["res://.godot/imported/snare-smasher.wav-0017ebbd32b07057b766e7e5c4075118.sample"]
+source_file="res://samples/snare-smasher.wav"
+dest_files=["res://.godot/imported/snare-smasher.wav-d3fb9a014a8dc2f621bdaa7042e11e14.sample"]
 
 [params]
 

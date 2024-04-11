@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cxbub3tob2tq1"
-path="res://.godot/imported/kick-zapper.wav-93e80ea209a8be4f54cf7c0d86b93e98.sample"
+path="res://.godot/imported/kick-zapper.wav-405c1b2fb8a43cb31a593d28a93ae15b.sample"
 
 [deps]
 
-source_file="res://Samples/kick-zapper.wav"
-dest_files=["res://.godot/imported/kick-zapper.wav-93e80ea209a8be4f54cf7c0d86b93e98.sample"]
+source_file="res://samples/kick-zapper.wav"
+dest_files=["res://.godot/imported/kick-zapper.wav-405c1b2fb8a43cb31a593d28a93ae15b.sample"]
 
 [params]
 

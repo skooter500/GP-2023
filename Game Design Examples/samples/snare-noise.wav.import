@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b1h8wsw5y6qu1"
-path="res://.godot/imported/snare-noise.wav-aae6f48c10e4f429e301f6f8a97a5463.sample"
+path="res://.godot/imported/snare-noise.wav-2c9b71abaf31ff399e7693a1e0abcb8d.sample"
 
 [deps]
 
-source_file="res://Samples/snare-noise.wav"
-dest_files=["res://.godot/imported/snare-noise.wav-aae6f48c10e4f429e301f6f8a97a5463.sample"]
+source_file="res://samples/snare-noise.wav"
+dest_files=["res://.godot/imported/snare-noise.wav-2c9b71abaf31ff399e7693a1e0abcb8d.sample"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bw17g4m6uqd05"
-path="res://.godot/imported/clap-crushed.wav-c0a8b7eebffeb612f698e339e58bbd61.sample"
+path="res://.godot/imported/clap-crushed.wav-9d46705d21497b0ef028a231ba28c99d.sample"
 
 [deps]
 
-source_file="res://Samples/clap-crushed.wav"
-dest_files=["res://.godot/imported/clap-crushed.wav-c0a8b7eebffeb612f698e339e58bbd61.sample"]
+source_file="res://samples/clap-crushed.wav"
+dest_files=["res://.godot/imported/clap-crushed.wav-9d46705d21497b0ef028a231ba28c99d.sample"]
 
 [params]
 

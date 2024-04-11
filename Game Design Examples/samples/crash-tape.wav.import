@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bhljvjk7r5n47"
-path="res://.godot/imported/crash-tape.wav-a996f38a82d26f5ebe8a6782f4b4561c.sample"
+path="res://.godot/imported/crash-tape.wav-1d258de19d4b9c631ccf48848401cd44.sample"
 
 [deps]
 
-source_file="res://Samples/crash-tape.wav"
-dest_files=["res://.godot/imported/crash-tape.wav-a996f38a82d26f5ebe8a6782f4b4561c.sample"]
+source_file="res://samples/crash-tape.wav"
+dest_files=["res://.godot/imported/crash-tape.wav-1d258de19d4b9c631ccf48848401cd44.sample"]
 
 [params]
 

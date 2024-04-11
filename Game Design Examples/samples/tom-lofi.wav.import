@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b0cmky46f4jtx"
-path="res://.godot/imported/tom-lofi.wav-9c201f92db16e061ab2646c85fb123de.sample"
+path="res://.godot/imported/tom-lofi.wav-d052b33eab44c0ee19b5b262c6787983.sample"
 
 [deps]
 
-source_file="res://Samples/tom-lofi.wav"
-dest_files=["res://.godot/imported/tom-lofi.wav-9c201f92db16e061ab2646c85fb123de.sample"]
+source_file="res://samples/tom-lofi.wav"
+dest_files=["res://.godot/imported/tom-lofi.wav-d052b33eab44c0ee19b5b262c6787983.sample"]
 
 [params]
 

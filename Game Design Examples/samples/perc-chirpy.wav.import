@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cs1xj2icrolc"
-path="res://.godot/imported/perc-chirpy.wav-25828d7dc821fd3f983d1f2f65ec631f.sample"
+path="res://.godot/imported/perc-chirpy.wav-6a0361ea0e133a6c349d6d44ca75b9e1.sample"
 
 [deps]
 
-source_file="res://Samples/perc-chirpy.wav"
-dest_files=["res://.godot/imported/perc-chirpy.wav-25828d7dc821fd3f983d1f2f65ec631f.sample"]
+source_file="res://samples/perc-chirpy.wav"
+dest_files=["res://.godot/imported/perc-chirpy.wav-6a0361ea0e133a6c349d6d44ca75b9e1.sample"]
 
 [params]
 

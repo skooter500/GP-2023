@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bwkmqo5y8htav"
-path="res://.godot/imported/perc-hollow.wav-c985a210d3f77ef997b0588ebaa1bcff.sample"
+path="res://.godot/imported/perc-hollow.wav-6452520d5d973cfc036f1a9f2ce28e5b.sample"
 
 [deps]
 
-source_file="res://Samples/perc-hollow.wav"
-dest_files=["res://.godot/imported/perc-hollow.wav-c985a210d3f77ef997b0588ebaa1bcff.sample"]
+source_file="res://samples/perc-hollow.wav"
+dest_files=["res://.godot/imported/perc-hollow.wav-6452520d5d973cfc036f1a9f2ce28e5b.sample"]
 
 [params]
 

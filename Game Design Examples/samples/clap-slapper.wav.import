@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dys8pu1rk7end"
-path="res://.godot/imported/clap-slapper.wav-fecf8e13afee32ed1d47941772e5d6a2.sample"
+path="res://.godot/imported/clap-slapper.wav-46829b80a59429984a6d90a00e9ee8d8.sample"
 
 [deps]
 
-source_file="res://Samples/clap-slapper.wav"
-dest_files=["res://.godot/imported/clap-slapper.wav-fecf8e13afee32ed1d47941772e5d6a2.sample"]
+source_file="res://samples/clap-slapper.wav"
+dest_files=["res://.godot/imported/clap-slapper.wav-46829b80a59429984a6d90a00e9ee8d8.sample"]
 
 [params]
 

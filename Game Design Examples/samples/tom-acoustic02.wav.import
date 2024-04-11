@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bmrp57guxwdv6"
-path="res://.godot/imported/tom-acoustic02.wav-f33689b8dbbad3c905408a50f705d418.sample"
+path="res://.godot/imported/tom-acoustic02.wav-35b379c5cbc51db7a9c3a724e66d9937.sample"
 
 [deps]
 
-source_file="res://Samples/tom-acoustic02.wav"
-dest_files=["res://.godot/imported/tom-acoustic02.wav-f33689b8dbbad3c905408a50f705d418.sample"]
+source_file="res://samples/tom-acoustic02.wav"
+dest_files=["res://.godot/imported/tom-acoustic02.wav-35b379c5cbc51db7a9c3a724e66d9937.sample"]
 
 [params]
 

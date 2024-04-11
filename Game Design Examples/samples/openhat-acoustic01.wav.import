@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bkiyhoi26f0rn"
-path="res://.godot/imported/openhat-acoustic01.wav-149ae32b6f3d85cab516be53b10db024.sample"
+path="res://.godot/imported/openhat-acoustic01.wav-f7565a1b2cb1df3922b343c869736093.sample"
 
 [deps]
 
-source_file="res://Samples/openhat-acoustic01.wav"
-dest_files=["res://.godot/imported/openhat-acoustic01.wav-149ae32b6f3d85cab516be53b10db024.sample"]
+source_file="res://samples/openhat-acoustic01.wav"
+dest_files=["res://.godot/imported/openhat-acoustic01.wav-f7565a1b2cb1df3922b343c869736093.sample"]
 
 [params]
 

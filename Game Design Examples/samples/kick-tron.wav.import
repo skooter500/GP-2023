@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://l2ay852xmgvu"
-path="res://.godot/imported/kick-tron.wav-5268cc179826d089f4242b12eea21adf.sample"
+path="res://.godot/imported/kick-tron.wav-e99f3bfbb4f9f4abdb96a7d8d6b9787d.sample"
 
 [deps]
 
-source_file="res://Samples/kick-tron.wav"
-dest_files=["res://.godot/imported/kick-tron.wav-5268cc179826d089f4242b12eea21adf.sample"]
+source_file="res://samples/kick-tron.wav"
+dest_files=["res://.godot/imported/kick-tron.wav-e99f3bfbb4f9f4abdb96a7d8d6b9787d.sample"]
 
 [params]
 
